@@ -2,7 +2,7 @@
 * @Author: Gabriel Lucena
 * @Date:   2017-01-14 12:22:04
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-01-14 13:41:46
+* @Last Modified time: 2017-01-14 15:14:02
 */
 
 import { Component, OnInit } from '@angular/core';
