@@ -5,8 +5,10 @@ import { HttpModule } from '@angular/http';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
-// cv module
+// Modules
+import { NamePositionModule } from './cv/name-position.module';
 import { CvModule } from './cv/cv.module';
+
 
 // app module
 import { AppComponent } from './app.component';
@@ -20,7 +22,8 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule,
     NgbModule.forRoot(),
-    CvModule
+    CvModule,
+    NamePositionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

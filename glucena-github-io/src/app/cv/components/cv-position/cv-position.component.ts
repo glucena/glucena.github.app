@@ -1,26 +1,26 @@
 /*
 * @Author: Gabriel Lucena
-* @Date:   2017-01-14 12:22:04
+* @Date:   2017-02-19 18:29:22
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-02-19 09:57:35
+* @Last Modified time: 2017-02-19 18:30:47
 */
-
 import { Component, OnInit } from '@angular/core';
 
 import { CvService } from '../../cv.service';
 
+
 @Component( {
-    selector: 'cv',
-    templateUrl: './cv.component.html',
-    styleUrls: ['./cv.component.scss']
+    selector: 'cv-position',
+    templateUrl: './cv-position.component.html',
+    styleUrls: ['./cv-position.component.scss']
 } )
-export class CvComponent implements OnInit  {
+export class CvPosition implements OnInit {
 
     cvData: any;
     
     constructor ( private cvService : CvService ) {};
 
-	ngOnInit () {
+    ngOnInit () {
         this.cvData = this.cvService.getCvData();
-	}
+    }
 }
