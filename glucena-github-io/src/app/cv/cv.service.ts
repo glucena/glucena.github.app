@@ -2,7 +2,7 @@
 * @Author: Gabriel Lucena
 * @Date:   2017-01-29 13:25:23
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-01-29 14:03:25
+* @Last Modified time: 2017-03-04 19:18:54
 */
 import { Injectable } from '@angular/core';
 
@@ -24,7 +24,9 @@ export class CvService {
         email: 'gabriel.lucena.toro@gmail.com'
       },
       academic: {
-
+        title: 'Technical Engineering in Computer Systems',
+        from: 2001,
+        to: 2005
       },
       social: [
         {
@@ -69,6 +71,7 @@ export class CvService {
         }
       ],
       skills: {
+        summary: 'JavaScript & python developer. MEAN stack expert'
 
       }
     }

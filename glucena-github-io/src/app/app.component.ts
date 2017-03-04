@@ -5,7 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: [
     './app.component.css',
-    '../assets/css/colors/default.css',
     '../assets/css/vendor/flaticons/flaticon.min.css' 
   ]
 })
