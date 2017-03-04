@@ -7,7 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 // Modules
 import { NamePositionModule } from './cv/name-position.module';
-import { CvModule } from './cv/cv.module';
+import { SummaryModule } from './cv/summary.module';
 
 
 // app module
@@ -22,7 +22,7 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule,
     NgbModule.forRoot(),
-    CvModule,
+    SummaryModule,
     NamePositionModule
   ],
   providers: [],

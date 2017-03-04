@@ -2,7 +2,7 @@
 * @Author: Gabriel Lucena
 * @Date:   2017-01-14 12:22:04
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-03-04 19:34:28
+* @Last Modified time: 2017-03-04 20:32:10
 */
 
 import { Component, OnInit } from '@angular/core';
@@ -10,14 +10,14 @@ import { Component, OnInit } from '@angular/core';
 import { CvService } from '../../cv.service';
 
 @Component( {
-    selector: 'cv',
-    templateUrl: './cv.component.html',
+    selector: 'summary',
+    templateUrl: './summary.component.html',
     styleUrls: [
-        './cv.component.scss',
+        './summary.component.scss',
         '../../../../assets/css/vendor/flaticons/flaticon.min.css'
     ]
 } )
-export class CvComponent implements OnInit  {
+export class SummaryComponent implements OnInit  {
 
     cvData: any;
     

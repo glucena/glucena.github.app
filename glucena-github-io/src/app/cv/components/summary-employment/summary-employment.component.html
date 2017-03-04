@@ -1,0 +1,19 @@
+<div id="pro-experience" class="dark" data-animation-origin="bottom" data-animation-duration="300" data-animation-delay="800" data-animation-distance="200px" data-sr-id="35" style="">
+    <div class="padding-50 flex-panel">
+       <h3 class="font-accident-two-normal uppercase title">Employment</h3>
+       <div class="dividewhite4"></div>
+       <div class="experience">
+          <ul class="" *ngFor="let item of cvData.employment">
+             <li class="date">{{ item.from }} - {{ item.to }}</li>
+             <li class="company uppercase">
+                <a>
+                   {{ item.where }}
+                </a>
+             </li>
+             <li class="position">{{ item.jobPosition }}</li>
+          </ul>
+       </div>
+       <a href="resume.html" class="btn btn-wh-trans btn-xs">Learn More</a>
+       <div class="dividewhite1"></div>
+    </div>
+</div>

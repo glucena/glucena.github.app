@@ -2,7 +2,7 @@
 * @Author: Gabriel Lucena
 * @Date:   2017-01-29 13:25:23
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-03-04 19:18:54
+* @Last Modified time: 2017-03-04 21:19:16
 */
 import { Injectable } from '@angular/core';
 
@@ -50,7 +50,7 @@ export class CvService {
           from: '06/2016',
           to: 'now',
           where: 'SEPALO Software',
-          jobPosition: 'FullStack Development',
+          jobPosition: 'Software engineer',
           description: '',
           projects: [
             {
