@@ -2,7 +2,7 @@
 * @Author: Gabriel Lucena
 * @Date:   2017-01-29 13:25:23
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-03-04 21:19:16
+* @Last Modified time: 2017-03-05 13:29:58
 */
 import { Injectable } from '@angular/core';
 
@@ -51,7 +51,7 @@ export class CvService {
           to: 'now',
           where: 'SEPALO Software',
           jobPosition: 'Software engineer',
-          description: '',
+          description: 'Web apps developer implementing project using the MEAN stack',
           projects: [
             {
               title: 'Loyalty Manager',
@@ -67,6 +67,46 @@ export class CvService {
             'Javascript',
             'AngularJS',
             'NodeJS'
+          ]
+        }, {
+          from: '08/2013',
+          to: '06/2016',
+          where: 'Wellness Smart Cities & Solutions',
+          jobPosition: 'Software engineer',
+          description: 'Software developer implementing custom applications and Smart Cities products.',
+          projects: [
+          ],
+          tags: [
+            'Javascript',
+            'AngularJS',
+            'NodeJS',
+            'Django',
+            'Python'
+          ]
+        }, {
+          from: '04/2011',
+          to: '08/2013',
+          where: 'Wellness Telecom',
+          jobPosition: 'Software engineer',
+          description: 'Software engineer in R&D department. Design and implementation of custom Web applications',
+          projects: [
+          ],
+          tags: [
+            'Django',
+            'Python'
+          ]
+        }, {
+          from: '06/2006',
+          to: '04/2011',
+          where: 'everis',
+          jobPosition: 'Applications Analyst',
+          description: 'Analyst, planning, design and implementation of Web custom applications.',
+          projects: [
+          ],
+          tags: [
+            'Python',
+            'Zope/Plone',
+            'Liferay'
           ]
         }
       ],

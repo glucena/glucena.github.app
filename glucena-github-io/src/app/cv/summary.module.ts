@@ -2,7 +2,7 @@
 * @Author: Gabriel Lucena
 * @Date:   2017-01-14 13:27:37
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-03-04 21:06:06
+* @Last Modified time: 2017-03-05 13:39:08
 */
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
@@ -19,6 +19,7 @@ import { SummaryComponent } from './containers/summary/summary.component';
 import { SummaryPersonalInfo } from './components/summary-personal-info/summary-personal-info.component';
 import { SummaryDetails } from './components/summary-details/summary-details.component';
 import { SummaryEmployment } from './components/summary-employment/summary-employment.component';
+import { SummarySkills } from './components/summary-skills/summary-skills.component';
 
 @NgModule({
     declarations: [
@@ -26,7 +27,8 @@ import { SummaryEmployment } from './components/summary-employment/summary-emplo
         SummaryComponent,
         SummaryPersonalInfo,
         SummaryDetails,
-        SummaryEmployment
+        SummaryEmployment,
+        SummarySkills
     ],
     imports: [
         CommonModule,
