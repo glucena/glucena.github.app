@@ -8,7 +8,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 // Modules
 import { NamePositionModule } from './cv/name-position.module';
 import { SummaryModule } from './cv/summary.module';
+import { ResumeModule } from './cv/resume.module';
 
+// Routing
+import { AppRoutingModule } from './app.routing.module';
 
 // app module
 import { AppComponent } from './app.component';
@@ -23,7 +26,9 @@ import { AppComponent } from './app.component';
     HttpModule,
     NgbModule.forRoot(),
     SummaryModule,
-    NamePositionModule
+    ResumeModule,
+    NamePositionModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

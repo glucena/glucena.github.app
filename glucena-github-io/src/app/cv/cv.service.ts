@@ -2,7 +2,7 @@
 * @Author: Gabriel Lucena
 * @Date:   2017-01-29 13:25:23
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-03-05 13:29:58
+* @Last Modified time: 2017-03-18 10:35:23
 */
 import { Injectable } from '@angular/core';
 
@@ -111,8 +111,15 @@ export class CvService {
         }
       ],
       skills: {
-        summary: 'JavaScript & python developer. MEAN stack expert'
+        summary: 'JavaScript & python developer. MEAN stack expert',
+        professional: [
+          {
+            level: 90,
+            title: 'Web development',
+            description: 'More than 10 years of experiencie developing with many plaforms such as MEAN, Django, Flask, Bottlepy...'
+          }
 
+        ]
       }
     }
   }
