@@ -2,7 +2,7 @@
 * @Author: Gabriel Lucena
 * @Date:   2017-01-29 13:25:23
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-03-18 10:35:23
+* @Last Modified time: 2017-03-19 11:07:13
 */
 import { Injectable } from '@angular/core';
 
@@ -117,8 +117,34 @@ export class CvService {
             level: 90,
             title: 'Web development',
             description: 'More than 10 years of experiencie developing with many plaforms such as MEAN, Django, Flask, Bottlepy...'
+          },
+          {
+            level: 95,
+            title: 'Fullstack',
+            description: 'No matter where a solution is needed. I can handle it'
+          },
+          {
+            level: 70,
+            title: 'DevOps',
+            description: 'Continuous integration oriented development. Expertise implementing automated building & deployment processes'
           }
-
+        ],
+        personal: [
+          {
+            icon: 'flaticon-tool-1',
+            title: 'Smart',
+            description: 'Always looking for the best and siplest solution. Think once, do many.'
+          },
+          {
+            icon: 'flaticon-circle-1',
+            title: 'Autodidact',
+            description: 'Cutting-edge technologies follower & best-practices/standars enthusiast'
+          },
+          {
+            icon: 'flaticon-clocks18',
+            title: 'Responsible',
+            description: 'A deadline is a compromise'
+          }
         ]
       }
     }

@@ -2,7 +2,7 @@
 * @Author: Gabriel Lucena
 * @Date:   2017-03-18 19:29:08
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-03-18 21:16:32
+* @Last Modified time: 2017-03-19 09:59:14
 */
 
 import { Directive, ElementRef, Input, OnInit } from '@angular/core';
@@ -10,7 +10,7 @@ import { Directive, ElementRef, Input, OnInit } from '@angular/core';
 declare var ProgressBar: any;
 
 @Directive({
-    selector: '[data-progressbar]'
+    selector: '[progressBar]'
 })
 export class ProgressBarDirective implements OnInit {
     constructor(elem: ElementRef) {
@@ -20,31 +20,31 @@ export class ProgressBarDirective implements OnInit {
     elem: any;
 
     @Input('progressBar') barType: string;
-    @Input('progressBarColor') color: string;
-    @Input('progressBarTrailcolor') trailColor: string;
-    @Input('progressBarTrailwidth') trailWidth: string;
-    @Input('progressBarStrokewidth') strokeWidth: string;
-    @Input('progressBarFrom') from: string;
-    @Input('progressBarTo') to: string;
-    @Input('progressBarValue') value: string;
-    @Input('progressBarEasing') easing: string;
-    @Input('progressBarDuration') duration: string;
+    @Input() progressBarColor: string;
+    @Input() progressBarTrailColor: string;
+    @Input() progressBarTrailwidth: string;
+    @Input() progressBarStrokewidth: string;
+    @Input() progressBarFrom: Object;
+    @Input() progressBarTo: Object;
+    @Input() progressBarValue: string;
+    @Input() progressBarEasing: string;
+    @Input() progressBarDuration: string;
 
     progressbarConfig( ) {
         return {
-            value: (typeof this.value != "undefined") ? parseFloat(this.value) : 1,
+            value: (typeof this.progressBarValue != "undefined") ? parseFloat(this.progressBarValue) : 1,
             progressbar: (typeof this.barType != "undefined") ? this.barType : 'circle',
-            color: (typeof this.color != "undefined") ? this.color : '#fff',
-            strokeWidth: (typeof this.strokeWidth != "undefined") ? parseInt(this.strokeWidth) : 4,
-            trailWidth: (typeof this.trailWidth != "undefined") ? parseFloat(this.trailWidth) : 1,
-            trailColor: (typeof this.trailColor != "undefined") ? this.trailColor : '#f4f4f4',
-            easing: (typeof this.easing != "undefined") ? this.easing : 'easeInOut',
-            duration: (typeof this.duration != "undefined") ? parseInt(this.duration) : 1400,
+            color: (typeof this.progressBarColor != "undefined") ? this.progressBarColor : '#fff',
+            strokeWidth: (typeof this.progressBarStrokewidth != "undefined") ? parseInt(this.progressBarStrokewidth) : 4,
+            trailWidth: (typeof this.progressBarTrailwidth != "undefined") ? parseFloat(this.progressBarTrailwidth) : 1,
+            trailColor: (typeof this.progressBarTrailColor != "undefined") ? this.progressBarTrailColor : '#f4f4f4',
+            easing: (typeof this.progressBarEasing != "undefined") ? this.progressBarEasing : 'easeInOut',
+            duration: (typeof this.progressBarDuration != "undefined") ? parseInt(this.progressBarDuration) : 1400,
             text: {
                 autoStyleContainer: false
             },
-            from: (typeof this.from != "undefined") ? this.from : { color: '#aaa', width: 1 },
-            to: (typeof this.to != "undefined") ? this.to : { color: '#333', width: 4 },
+            from: (typeof this.progressBarFrom != "undefined") ? this.progressBarFrom : { color: '#aaa', width: 1 },
+            to: (typeof this.progressBarTo != "undefined") ? this.progressBarTo : { color: '#333', width: 4 },
             // Set default step function for all animate calls
             step: function(state, circle) {
                 circle.path.setAttribute('stroke', state.color);
@@ -61,10 +61,9 @@ export class ProgressBarDirective implements OnInit {
     };
 
     ngOnInit() {
-        console.log("BT", this)
+        console.log("BT", this.progressbarConfig())
         let config = this.progressbarConfig();
-        new ProgressBar.Circle(this.elem, config);
-        /*
+
         switch (this.barType) {
             case 'line':
                 this.elem = new ProgressBar.Line(this.elem, config);
@@ -76,6 +75,6 @@ export class ProgressBarDirective implements OnInit {
                 this.elem = new ProgressBar.SemiCircle(this.elem, config);
                 break;
         }
-        */
+        this.elem.animate(config.value);
     }
 }

@@ -4,16 +4,15 @@
        <div class="dividewhite1"></div>
        <div class="row">
 
-          <div class="col-md-4 col-sm-4 col-xs-12 nopadding" *ngFor="let skill of cvData.skills.professional">
+          <div class="col-md-4 col-sm-4 col-xs-12 nopadding" *ngFor="let skill of cvData.skills.professional;let i = index">
              <div class="progressbar text-center">
-                <div id="circle1"
-                     progressBar="circle"
-                     progressBarColor="#fff"
-                     progressBarTrailColor="#fff"
-                     progressBarTo='{"color": "#51f2ec", "width": 4}'
-                     progressBarFrom='{"color": "#3498db", "width": 4}'
+                <div [id]="'circle' + ( i + 1 )"
+                     [progressBar]="'circle'"
+                     [progressBarColor]="'#fff'"
+                     [progressBarTrailColor]="'#fff'"
+                     [progressBarFrom]='{"color": "#3498db", "width": 4}'
+                     [progressBarTo]='{"color": "#ffd200", "width": 4}'
                      [progressBarValue]="skill.level / 100">
-                     AAA
                 </div>
                 <h4 class="font-accident-two-bold uppercase">{{ skill.title }}</h4>
                 <p class="font-regular-normal">
@@ -23,46 +22,6 @@
              </div>
              <div class="dividewhite1"></div>
           </div>
-<!--
-          <div class="col-md-4 col-sm-4 col-xs-12 nopadding">
-             <div class="progressbar text-center">
-                <div id="circle1" data-progressbar="circle" data-progressbar-color="#fff" data-progressbar-trailcolor="#fff" data-progressbar-to="{&quot;color&quot;: &quot;#51f2ec&quot;, &quot;width&quot;: 4}" data-progressbar-from="{&quot;color&quot;: &quot;#3498db&quot;, &quot;width&quot;: 4}" data-progressbar-value="0.3">
-                <svg viewBox="0 0 100 100" style=""><path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="#fff" stroke-width="1" fill-opacity="0"></path><path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="rgb(73,218,231)" stroke-width="4" fill-opacity="0" style="stroke-dasharray: 301.635, 301.635; stroke-dashoffset: 120.654;"></path></svg><div class="progressbar-text" style="position: absolute; left: 50%; top: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(255, 255, 255);">60%</div></div>
-                <h4 class="font-accident-two-bold uppercase">Install</h4>
-                <p class="font-regular-normal">
-                   A prototype is an early sample, model, or release of a product built to test ...
-                </p>
-                <a href="resume.html" class="btn btn-wh-trans btn-xs">Learn More</a>
-             </div>
-             <div class="dividewhite1"></div>
-          </div>
-
-          <div class="col-md-4 col-sm-4 col-xs-12 nopadding">
-             <div class="progressbar text-center">
-                <div id="circle2" data-progressbar="circle" data-progressbar-color="#fff" data-progressbar-trailcolor="#fff" data-progressbar-to="{&quot;color&quot;: &quot;#ffd200&quot;, &quot;width&quot;: 4}" data-progressbar-from="{&quot;color&quot;: &quot;#3498db&quot;, &quot;width&quot;: 4}" data-progressbar-value="0.85">
-                <svg viewBox="0 0 100 100" style=""><path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="#fff" stroke-width="1" fill-opacity="0"></path><path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="rgb(252,209,2)" stroke-width="4" fill-opacity="0" style="stroke-dasharray: 301.635, 301.635; stroke-dashoffset: 45.2453;"></path></svg><div class="progressbar-text" style="position: absolute; left: 50%; top: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(255, 255, 255);">85%</div></div>
-                <h4 class="font-accident-two-bold uppercase">Customize</h4>
-                <p class="font-regular-normal">
-                    Design is the creation of a plan or convention for the construction of an object ...
-                </p>
-                <a href="resume.html" class="btn btn-wh-trans btn-xs">Learn More</a>
-             </div>
-             <div class="dividewhite1"></div>
-          </div>
-
-          <div class="col-md-4 col-sm-4 col-xs-12 nopadding">
-             <div class="progressbar text-center">
-                <div id="circle3" data-progressbar="circle" data-progressbar-color="#fff" data-progressbar-trailcolor="#fff" data-progressbar-to="{&quot;color&quot;: &quot;#F09C88&quot;, &quot;width&quot;: 4}" data-progressbar-from="{&quot;color&quot;: &quot;#3498db&quot;, &quot;width&quot;: 4}" data-progressbar-value="0.93">
-                <svg viewBox="0 0 100 100" style=""><path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="#fff" stroke-width="1" fill-opacity="0"></path><path d="M 50,50 m 0,-48 a 48,48 0 1 1 0,96 a 48,48 0 1 1 0,-96" stroke="rgb(239,155,136)" stroke-width="4" fill-opacity="0" style="stroke-dasharray: 301.635, 301.635; stroke-dashoffset: 21.1145;"></path></svg><div class="progressbar-text" style="position: absolute; left: 50%; top: 50%; padding: 0px; margin: 0px; transform: translate(-50%, -50%); color: rgb(255, 255, 255);">93%</div></div>
-                <h4 class="font-accident-two-bold uppercase">Support</h4>
-                <p class="font-regular-normal">
-                    Software development is the process of computer programming ...
-                </p>
-                <a href="resume.html" class="btn btn-wh-trans btn-xs">Learn More</a>
-             </div>
-             <div class="dividewhite1"></div>
-          </div>
--->
        </div>
     </div>
 </div>

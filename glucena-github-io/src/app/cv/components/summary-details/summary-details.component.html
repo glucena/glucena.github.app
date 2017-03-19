@@ -11,43 +11,20 @@
        </div>
        <div class="divider-dynamic"></div>
        <div class="row nopadding">
-          <div class="col-md-4 infoblock nopadding">
+          <div class="col-md-4 infoblock nopadding" *ngFor="let skill of cvData.skills.personal;">
              <div class="row">
-                <div class="col-xs-12 col-sm-1 col-md-3"><i class="flaticon-clocks18 color-blue"></i><div class="dividewhite1"></div></div>
+                <div class="col-xs-12 col-sm-1 col-md-3">
+                  <i class="flaticon-clocks18 color-blue"></i><div class="dividewhite1"></div>
+                </div>
                 <div class="col-xs-12 col-sm-11 col-md-9">
-                   <h4 class="font-accident-two-medium uppercase">Modern</h4>
+                   <h4 class="font-accident-two-medium uppercase">{{ skill.title }}</h4>
                    <p class="">
-                      The Gridus Resume Template has an unique modern flat intuitive design. You can choose one of 8 Color schemes.
+                      {{ skill.description }}
                    </p>
                 </div>
              </div>
              <div class="divider-dynamic"></div>
           </div>
-          <div class="col-md-4 infoblock nopadding">
-             <div class="row">
-                <div class="col-xs-12 col-sm-1 col-md-3"><i class="flaticon-pie-graph color-blue"></i><div class="dividewhite1"></div></div>
-                <div class="col-xs-12 col-sm-11 col-md-9">
-                   <h4 class="font-accident-two-medium uppercase">Simple CV</h4>
-                   <p class="">
-                      Gridus Personal Template is the simple, clean and stylish fully-responsive resume theme with modern creative design.
-                   </p>
-                </div>
-             </div>
-             <div class="divider-dynamic"></div>
-          </div>
-          <div class="col-md-4 infoblock nopadding">
-             <div class="row">
-                <div class="col-xs-12 col-sm-1 col-md-3"><i class="flaticon-tool-1 color-blue"></i><div class="dividewhite1"></div></div>
-                <div class="col-xs-12 col-sm-11 col-md-9">
-                   <h4 class="font-accident-two-medium uppercase">Responsive</h4>
-                   <p class="">
-                      Works fast and looks fine on any device with the wide range of the screen resolution. Supports all the Google SEO rules.
-                   </p>
-                </div>
-             </div>
-             <div class="divider-dynamic"></div>
-          </div>
-
        </div>
     </div>
 </div>
