@@ -20,6 +20,8 @@
       "styles": [
         "styles.css",
         "./assets/css/colors/default.css",
+        "./assets/css/colors.scss",
+        "./assets/css/typography.scss",
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "../node_modules/font-awesome/css/font-awesome.min.css"
       ],

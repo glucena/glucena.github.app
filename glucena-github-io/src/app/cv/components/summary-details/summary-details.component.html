@@ -14,7 +14,7 @@
           <div class="col-md-4 infoblock nopadding" *ngFor="let skill of cvData.skills.personal;">
              <div class="row">
                 <div class="col-xs-12 col-sm-1 col-md-3">
-                  <i class="flaticon-clocks18 color-blue"></i><div class="dividewhite1"></div>
+                  <i class="color-blue" [ngClass]="skill.icon"></i><div class="dividewhite1"></div>
                 </div>
                 <div class="col-xs-12 col-sm-11 col-md-9">
                    <h4 class="font-accident-two-medium uppercase">{{ skill.title }}</h4>

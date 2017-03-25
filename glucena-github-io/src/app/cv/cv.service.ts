@@ -2,7 +2,7 @@
 * @Author: Gabriel Lucena
 * @Date:   2017-01-29 13:25:23
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-03-19 11:07:13
+* @Last Modified time: 2017-03-25 20:45:40
 */
 import { Injectable } from '@angular/core';
 
@@ -12,6 +12,7 @@ export class CvService {
 
   getCvData(): Object {
     return {
+      summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id metus purus. Ut vulputate, est vel tincidunt mattis, orci neque iaculis lectus, et interdum quam felis vel tortor. Fusce ultrices dui quis nunc dignissim faucibus. Ut ac odio quis nibh viverra fringilla ac id nisi. Suspendisse tincidunt augue quis ligula cursus, non efficitur ligula faucibus. Mauris id neque maximus, tincidunt metus et, sodales nulla.',
       personalData: {
         name: 'Gabriel',
         middleName: 'Lucena',
@@ -145,6 +146,19 @@ export class CvService {
             title: 'Responsible',
             description: 'A deadline is a compromise'
           }
+        ],
+        technical: [
+          {
+            title: 'python',
+            icon: 'devicon-python-plain',
+            description: '' 
+          },
+          {
+            title: 'nodejs',
+            icon: 'devicon-nodejs-plain',
+            description: '' 
+          }
+
         ]
       }
     }

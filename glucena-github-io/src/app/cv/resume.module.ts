@@ -2,7 +2,7 @@
 * @Author: Gabriel Lucena
 * @Date:   2017-03-18 10:20:17
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-03-18 10:22:10
+* @Last Modified time: 2017-03-25 19:44:44
 */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -16,11 +16,16 @@ import { CvService } from './cv.service'
 import { ResumeComponent } from './containers/resume/resume.component';
 
 // Components
+import { ResumeResume } from './components/resume-resume/resume-resume.component';
+import { ResumeTechSkills } from './components/resume-tech-skills/resume-tech-skills.component';
+
 
 @NgModule({
     declarations: [
         // register container component
-        ResumeComponent
+        ResumeComponent,
+        ResumeResume,
+        ResumeTechSkills
     ],
     imports: [
         CommonModule,
