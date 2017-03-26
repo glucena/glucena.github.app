@@ -2,7 +2,7 @@
 * @Author: Gabriel Lucena
 * @Date:   2017-03-18 10:20:17
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-03-25 19:44:44
+* @Last Modified time: 2017-03-26 17:56:25
 */
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -18,6 +18,7 @@ import { ResumeComponent } from './containers/resume/resume.component';
 // Components
 import { ResumeResume } from './components/resume-resume/resume-resume.component';
 import { ResumeTechSkills } from './components/resume-tech-skills/resume-tech-skills.component';
+import { ResumeTimeline } from './components/resume-timeline/resume-timeline.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { ResumeTechSkills } from './components/resume-tech-skills/resume-tech-sk
         // register container component
         ResumeComponent,
         ResumeResume,
-        ResumeTechSkills
+        ResumeTechSkills,
+        ResumeTimeline
     ],
     imports: [
         CommonModule,

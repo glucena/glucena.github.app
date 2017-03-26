@@ -2,7 +2,7 @@
 * @Author: Gabriel Lucena
 * @Date:   2017-01-29 13:25:23
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-03-25 20:45:40
+* @Last Modified time: 2017-03-26 22:07:48
 */
 import { Injectable } from '@angular/core';
 
@@ -12,7 +12,7 @@ export class CvService {
 
   getCvData(): Object {
     return {
-      summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id metus purus. Ut vulputate, est vel tincidunt mattis, orci neque iaculis lectus, et interdum quam felis vel tortor. Fusce ultrices dui quis nunc dignissim faucibus. Ut ac odio quis nibh viverra fringilla ac id nisi. Suspendisse tincidunt augue quis ligula cursus, non efficitur ligula faucibus. Mauris id neque maximus, tincidunt metus et, sodales nulla.',
+      summary: "+10 years experienced web developer. I like to make the things right and then make it faster. I've work in many sector such as I.T. consulting, R&D department, working on Smart Cities projects, surveilance projects and more recently making customer loyalty apps. I'm a cuting-edge technologies passionate, always looking for the next-best stack. In a continuous changing world you can't stop of learning, if you want to be up-to-date.",
       personalData: {
         name: 'Gabriel',
         middleName: 'Lucena',
@@ -53,6 +53,7 @@ export class CvService {
           where: 'SEPALO Software',
           jobPosition: 'Software engineer',
           description: 'Web apps developer implementing project using the MEAN stack',
+          image: 'building-baobab',
           projects: [
             {
               title: 'Loyalty Manager',
@@ -75,6 +76,7 @@ export class CvService {
           where: 'Wellness Smart Cities & Solutions',
           jobPosition: 'Software engineer',
           description: 'Software developer implementing custom applications and Smart Cities products.',
+          image: 'building-once',
           projects: [
           ],
           tags: [
@@ -90,6 +92,7 @@ export class CvService {
           where: 'Wellness Telecom',
           jobPosition: 'Software engineer',
           description: 'Software engineer in R&D department. Design and implementation of custom Web applications',
+          image: 'building-monorail01',
           projects: [
           ],
           tags: [
@@ -102,6 +105,7 @@ export class CvService {
           where: 'everis',
           jobPosition: 'Applications Analyst',
           description: 'Analyst, planning, design and implementation of Web custom applications.',
+          image: 'building-da-vinci',
           projects: [
           ],
           tags: [
@@ -149,16 +153,135 @@ export class CvService {
         ],
         technical: [
           {
-            title: 'python',
-            icon: 'devicon-python-plain',
-            description: '' 
+            category: 'Web development',
+            skills: [
+              {
+                title: 'python',
+                icon: 'devicon-python-plain',
+                description: "One of my favourites, I have been coding with it more than ten years. Web development, scripting, embeded programs... I have coded almost everything"
+              },
+              {
+                title: 'django',
+                icon: 'devicon-django-plain',
+                description: 'I love it. This is one of the easier framework I know to get a fullstack app working as soon as you can. Many apps have been developed by with it.' 
+              },
+              {
+                title: 'javaScript',
+                icon: 'devicon-javascript-plain',
+                description: "This is the main prgraming language I'am using currently. I can code in several version of this language from ECMA Script 5 to ES6 and beyond" 
+              },
+              {
+                title: 'nodejs',
+                icon: 'devicon-nodejs-plain',
+                description: 'This is my reference framework currently, I ve made a lot of apps using that: Monolitics apps (sorry for that), microsevices, devop apps, packages...' 
+              },
+              {
+                title: 'angularjs',
+                icon: 'devicon-angularjs-plain',
+                description: 'Angular is the choice (for the moment) when I have to build a front end app. I can code angular apps in serveral versions from angular 1.4.x to angular 4 or "just angular" like many people say'  
+              },
+              {
+                title: 'typeScript',
+                icon: 'devicon-typescript-plain',
+                description: 'The last to come, It turns one of my favourites. I use it to develop the more recent angular apps' 
+              },
+              {
+                title: 'bootstrap',
+                icon: 'devicon-bootstrap-plain',
+                description: 'Thanks to this framework for make easy the work to make the apps look great' 
+              },
+              {
+                title: 'html5',
+                icon: 'devicon-html5-plain',
+                description: '' 
+              },
+              {
+                title: 'css3',
+                icon: 'devicon-css3-plain',
+                description: '' 
+              }
+            ]
           },
           {
-            title: 'nodejs',
-            icon: 'devicon-nodejs-plain',
-            description: '' 
+            category: 'Testing',
+            skills: [
+            {
+                title: 'unittest',
+                icon: '',
+                description: 'The python library more used by me to implement unit tests' 
+              },
+              {
+                title: 'mocha',
+                icon: 'devicon-mocha-plain',
+                description: 'This is my first choice to implement unit testing suites for the server side' 
+              },
+              {
+                title: 'karma',
+                icon: '',
+                description: 'Used as font end tests runner' 
+              },
+              {
+                title: 'jasmine',
+                icon: 'devicon-jasmine-plain',
+                description: 'Used in conjuntion with karma to make unit testing for the client side' 
+              },
+              {
+                title: 'protractor',
+                icon: 'devicon-protractor-plain',
+                description: 'Protractor is the main tool I use to implement the front side end to end tests' 
+              }
+            ]
+          },
+          {
+            category: 'Databases',
+            skills: [
+              {
+                title: 'mongodb',
+                icon: 'devicon-mongodb-plain',
+                description: "The reference noSQL database. I'm a experienced developer in this technology. I've used it for many years" 
+              },
+              {
+                title: 'mySQL',
+                icon: 'devicon-mysql-plain',
+                description: 'Many relational schemas and databases are being defined by me using that' 
+              },
+              {
+                title: 'postgresql',
+                icon: 'devicon-postgresql-plain',
+                description: 'With mySQL is the main database I use to define relational schemas' 
+              },
+              {
+                title: 'redis',
+                icon: 'devicon-redis-plain',
+                description: "I usually to work with redis to implement cache systems and message queues"
+              }
+            ]
+          },
+          {
+            category: 'Build & deployment',
+            skills: [
+              {
+                title: 'grunt',
+                icon: 'devicon-grunt-plain',
+                description: '' 
+              },
+              {
+                title: 'gulp',
+                icon: 'devicon-gulp-plain',
+                description: '' 
+              },
+              {
+                title: 'webpack',
+                icon: 'devicon-webpack-plain',
+                description: '' 
+              },
+              {
+                title: 'docker',
+                icon: 'devicon-docker-plain',
+                description: '' 
+              },
+            ]
           }
-
         ]
       }
     }
