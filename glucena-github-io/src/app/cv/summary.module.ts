@@ -2,12 +2,13 @@
 * @Author: Gabriel Lucena
 * @Date:   2017-01-14 13:27:37
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-03-18 19:52:25
+* @Last Modified time: 2017-04-02 19:24:37
 */
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgsRevealModule } from 'ng-scrollreveal';
 
 // Services
 import { CvService } from './cv.service'
@@ -24,6 +25,9 @@ import { SummarySkills } from './components/summary-skills/summary-skills.compon
 // Directive
 import { ProgressBarDirective } from './directives/progressbar.directive';
 
+// Routing
+import { AppRoutingModule } from '../app.routing.module';
+
 
 @NgModule({
     declarations: [
@@ -37,7 +41,9 @@ import { ProgressBarDirective } from './directives/progressbar.directive';
     ],
     imports: [
         CommonModule,
-        NgbModule
+        NgbModule,
+        AppRoutingModule,
+        NgsRevealModule
     ],
     providers: [
         CvService

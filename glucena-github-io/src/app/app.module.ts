@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgsRevealModule } from 'ng-scrollreveal';
 
 // Modules
 import { NamePositionModule } from './cv/name-position.module';
@@ -25,6 +26,7 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule,
     NgbModule.forRoot(),
+    NgsRevealModule.forRoot(),
     SummaryModule,
     ResumeModule,
     NamePositionModule,

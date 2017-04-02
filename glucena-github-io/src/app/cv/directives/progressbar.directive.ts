@@ -2,7 +2,7 @@
 * @Author: Gabriel Lucena
 * @Date:   2017-03-18 19:29:08
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-03-19 09:59:14
+* @Last Modified time: 2017-04-02 18:19:05
 */
 
 import { Directive, ElementRef, Input, OnInit } from '@angular/core';
@@ -61,7 +61,6 @@ export class ProgressBarDirective implements OnInit {
     };
 
     ngOnInit() {
-        console.log("BT", this.progressbarConfig())
         let config = this.progressbarConfig();
 
         switch (this.barType) {

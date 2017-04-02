@@ -24,8 +24,10 @@
     "@ng-bootstrap/ng-bootstrap": "^1.0.0-alpha.18",
     "bootstrap": "^4.0.0-alpha.6",
     "core-js": "^2.4.1",
+    "ng-scrollreveal": "^2.0.2",
     "progressbar.js": "^1.0.1",
     "rxjs": "^5.0.1",
+    "scrollreveal": "^3.3.4",
     "ts-helpers": "^1.1.1",
     "zone.js": "^0.7.2"
   },
@@ -33,6 +35,7 @@
     "@angular/compiler-cli": "^2.3.1",
     "@types/jasmine": "2.5.38",
     "@types/node": "^6.0.42",
+    "@types/scrollreveal": "0.0.2",
     "angular-cli": "1.0.0-beta.24",
     "codelyzer": "~2.0.0-beta.1",
     "jasmine-core": "2.5.2",

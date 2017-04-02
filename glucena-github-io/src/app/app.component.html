@@ -13,23 +13,24 @@
 
             <!-- Main Navigation -->
 
-            <ul id="nav" class="row nopadding cd-side-navigation ui-menu-color06">
-               <li class="col-xs-4 col-sm-2 nopadding menuitem ui-menu-color01" data-animation-duration="1000" data-animation-delay="100" data-sr-id="1" style="">
+            <ul id="nav" class="row nopadding cd-side-navigation"
+               [ngsRevealSet]="{reset:true, rotate: { x: 10, y: 90, z: 0 }}" [ngsInterval]="200" [ngsSelector]="'.menuitem'">
+               <li class="col-xs-4 col-sm-2 nopadding menuitem ui-menu-color01" ngsReveal>
                   <a routerLink="/summary" routerLinkActive="active" class="hvr-sweep-to-bottom"><i class="flaticon-insignia"></i><span>home</span></a>
                </li>
-               <li class="col-xs-4 col-sm-2 nopadding menuitem ui-menu-color02" data-animation-duration="1000" data-animation-delay="300" data-sr-id="2" style="">
+               <li class="col-xs-4 col-sm-2 nopadding menuitem ui-menu-color02" ngsReveal>
                   <a routerLink="/resume" routerLinkActive="active" class="hvr-sweep-to-bottom"><i class="flaticon-graduation61"></i><span>resume</span></a>
                </li>
-               <li class="col-xs-4 col-sm-2 nopadding menuitem ui-menu-color03" data-animation-duration="1000" data-animation-delay="500" data-sr-id="3" style="">
+               <li class="col-xs-4 col-sm-2 nopadding menuitem ui-menu-color03" ngsReveal>
                   <a href="portfolio-4-col.html" class="hvr-sweep-to-bottom"><i class="flaticon-book-bag2"></i><span>portfolio</span></a>
                </li>
-               <li class="col-xs-4 col-sm-2 nopadding menuitem ui-menu-color04" data-animation-duration="1000" data-animation-delay="700" data-sr-id="4" style="">
+               <li class="col-xs-4 col-sm-2 nopadding menuitem ui-menu-color04" ngsReveal>
                   <a href="contacts.html" class="hvr-sweep-to-bottom"><i class="flaticon-placeholders4"></i><span>contacts</span></a>
                </li>
-               <li class="col-xs-4 col-sm-2 nopadding menuitem ui-menu-color05" data-animation-duration="1000" data-animation-delay="900" data-sr-id="5" style="">
+               <li class="col-xs-4 col-sm-2 nopadding menuitem ui-menu-color05" ngsReveal>
                   <a href="feedback.html" class="hvr-sweep-to-bottom"><i class="flaticon-earphones18"></i><span>feedback</span></a>
                </li>
-               <li class="col-xs-4 col-sm-2 nopadding menuitem ui-menu-color06" data-animation-duration="1000" data-animation-delay="1100" data-sr-id="6" style="">
+               <li class="col-xs-4 col-sm-2 nopadding menuitem ui-menu-color06" ngsReveal>
                   <a href="blog-3-col.html" class="hvr-sweep-to-bottom"><i class="flaticon-pens15"></i><span>blog</span></a>
                </li>
             </ul>
