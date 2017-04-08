@@ -2,7 +2,7 @@
 * @Author: Gabriel Lucena
 * @Date:   2017-04-08 10:44:21
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-04-08 10:48:56
+* @Last Modified time: 2017-04-08 20:00:36
 */
 
 'use strict';
@@ -20,11 +20,16 @@ import { CvService } from './cv.service'
 import { FooterComponent } from './containers/footer/footer.component';
 
 // Components
+import { CvDownload } from './components/cv-download/cv-download.component';
+import { CvSocial } from './components/cv-social/cv-social.component';
+
 
 @NgModule({
     declarations: [
         // register container component
-        FooterComponent
+        FooterComponent,
+        CvDownload,
+        CvSocial
     ],
     imports: [
         CommonModule,

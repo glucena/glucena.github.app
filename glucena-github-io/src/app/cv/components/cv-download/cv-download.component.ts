@@ -1,9 +1,11 @@
 /*
 * @Author: Gabriel Lucena
-* @Date:   2017-02-19 11:15:51
+* @Date:   2017-04-08 19:53:32
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-04-08 20:17:37
+* @Last Modified time: 2017-04-08 19:54:26
 */
+
+'use strict';
 
 import { Component, OnInit } from '@angular/core';
 
@@ -11,14 +13,11 @@ import { CvService } from '../../cv.service';
 
 
 @Component( {
-    selector: 'cv-name',
-    templateUrl: './cv-name.component.html',
-    styleUrls: [
-        './cv-name.component.scss',
-        '../../../../assets/css/vendor/flaticons/flaticon.min.css'
-    ]
+    selector: 'cv-download',
+    templateUrl: './cv-download.component.html',
+    styleUrls: ['./cv-download.component.scss']
 } )
-export class CvName implements OnInit {
+export class CvDownload implements OnInit {
 
     cvData: any;
     

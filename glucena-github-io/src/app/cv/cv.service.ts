@@ -2,7 +2,7 @@
 * @Author: Gabriel Lucena
 * @Date:   2017-01-29 13:25:23
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-03-26 22:07:48
+* @Last Modified time: 2017-04-08 20:15:15
 */
 import { Injectable } from '@angular/core';
 
@@ -20,8 +20,8 @@ export class CvService {
         fullname: 'Gabriel Lucena Toro',
         birthDate: '12/01/1983',
         title: 'FullStack Developer',
-        address: 'Carretera de Trassierra 47, bloque 2, 2ºC',
-        phone: '+34 665 032 160',
+        address: 'Carretera de Trassierra, Córdoba, Spain',
+        phone: '+34 123 456 789',
         email: 'gabriel.lucena.toro@gmail.com'
       },
       academic: {
@@ -32,18 +32,18 @@ export class CvService {
       social: [
         {
           name: 'twitter',
-          icon: '',
+          icon: 'fa-twitter',
           link: 'https://twitter.com/glucenat'
         },
         {
           name: 'github',
-          icon: '',
+          icon: 'fa-github',
           link: 'http://github.com/glucena/'
         },
         {
           name: 'linkedin',
-          icon: '',
-          link: ''
+          icon: 'fa-linkedin',
+          link: 'www.linkedin.com/in/gabriel-lucena-toro'
         }
       ],
       employment: [
