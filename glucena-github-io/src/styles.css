@@ -363,21 +363,26 @@
 
 /* Headings */
 h2 {
-  font-size: 48px; }
+  font-size: 48px !important;
+}
 
 h3 {
   line-height: 1.2em;
-  font-size: 29px; }
+  font-size: 29px !important;
+}
 
 h4 {
-  font-size: 16px; }
+  font-size: 18px !important;
+}
 
 h6 {
-  font-size: 11px;
-  letter-spacing: 3px; }
+  font-size: 11px !important;
+  letter-spacing: 3px;
+}
 
 h4 a, h5 a, h6 a {
-  color: #e74c3c; }
+  color: #e74c3c;
+}
 
 .title-light {
   padding-bottom: 20px;
@@ -1155,7 +1160,7 @@ button, input, select, textarea {
           #top-navigation .ident .vc-name .position .pdf a:hover i:before {
             opacity: 1; }
       #top-navigation .ident .vc-name .position h2 {
-        font-size: 24px;
+        font-size: 24px !important;
         line-height: 2.7em;
         white-space: nowrap;
         overflow: hidden;
@@ -2979,6 +2984,7 @@ footer {
     margin: 2px 0 4px 0;
     border-radius: 2px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 0 0;
+    font-size: 14px;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;

@@ -32,8 +32,8 @@
         "../node_modules/progressbar.js/dist/progressbar.min.js",
         "../node_modules/scrollreveal/dist/scrollreveal.js"
       ],
+      "environmentSource": "environments/environment.ts",
       "environments": {
-        "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }

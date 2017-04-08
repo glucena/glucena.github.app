@@ -10,6 +10,7 @@ import { NgsRevealModule } from 'ng-scrollreveal';
 import { NamePositionModule } from './cv/name-position.module';
 import { SummaryModule } from './cv/summary.module';
 import { ResumeModule } from './cv/resume.module';
+import { FooterModule } from './cv/footer.module';
 
 // Routing
 import { AppRoutingModule } from './app.routing.module';
@@ -30,6 +31,7 @@ import { AppComponent } from './app.component';
     SummaryModule,
     ResumeModule,
     NamePositionModule,
+    FooterModule,
     AppRoutingModule
   ],
   providers: [],
