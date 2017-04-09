@@ -2,7 +2,7 @@
 * @Author: Gabriel Lucena
 * @Date:   2017-01-29 13:25:23
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-04-08 20:15:15
+* @Last Modified time: 2017-04-09 19:21:51
 */
 import { Injectable } from '@angular/core';
 
@@ -22,7 +22,8 @@ export class CvService {
         title: 'FullStack Developer',
         address: 'Carretera de Trassierra, Córdoba, Spain',
         phone: '+34 123 456 789',
-        email: 'gabriel.lucena.toro@gmail.com'
+        email: 'gabriel.lucena.toro@gmail.com',
+        skype: '@glucenat'
       },
       academic: {
         title: 'Technical Engineering in Computer Systems',

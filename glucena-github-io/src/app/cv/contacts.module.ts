@@ -2,7 +2,7 @@
 * @Author: Gabriel Lucena
 * @Date:   2017-04-09 18:38:57
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-04-09 18:47:47
+* @Last Modified time: 2017-04-09 19:15:59
 */
 
 'use strict';
@@ -20,7 +20,8 @@ import { CvService } from './cv.service'
 import { ContactsComponent } from './containers/contacts/contacts.component';
 
 // Components
-//import { ResumeResume } from './components/resume-resume/resume-resume.component';
+import { ContactsHeading } from './components/contacts-heading/contacts-heading.component';
+import { ContactsData } from './components/contacts-data/contacts-data.component';
 //import { ResumeTechSkills } from './components/resume-tech-skills/resume-tech-skills.component';
 //import { ResumeTimeline } from './components/resume-timeline/resume-timeline.component';
 
@@ -29,8 +30,8 @@ import { ContactsComponent } from './containers/contacts/contacts.component';
     declarations: [
         // register container component
         ContactsComponent,
-        //ResumeResume,
-        //ResumeTechSkills,
+        ContactsHeading,
+        ContactsData,
         //ResumeTimeline
     ],
     imports: [

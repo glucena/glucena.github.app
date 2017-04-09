@@ -1,0 +1,31 @@
+<section id="contacts-data" class="inner-block">
+   <div class="container-fluid nopadding">
+      <div class="dividewhite8"></div>
+      <div class="row">
+         <div class="col-md-6"
+              [ngsReveal]="{reset:true, origin:'right', distance:'25px', duration:500, delay:500}">
+            <div class="row">
+               <div class="col-sm-2"><span class="font-accident-two-bold uppercase">Address:</span></div>
+               <div class="col-sm-10"><p class="small">{{ cvData.personalData.address }}</p></div>
+            </div>
+            <div class="row">
+               <div class="col-sm-2"><span class="font-accident-two-bold uppercase">Phone:</span></div>
+               <div class="col-sm-10"><p class="small">{{ cvData.personalData.phone }}</p></div>
+            </div>
+            <div class="row">
+               <div class="col-sm-2"><span class="font-accident-two-bold uppercase">Skype:</span></div>
+               <div class="col-sm-10"><p class="small">{{ cvData.personalData.skype }}</p></div>
+            </div>
+         </div>
+         <div class="col-md-6"
+              [ngsReveal]="{reset:true, origin:'right', distance:'25px', duration:500, delay:800}">
+            <div class="row" *ngFor="let sn of cvData.social">
+               <div class="col-sm-2"><span class="font-accident-two-bold uppercase">{{ sn.name }}:</span></div>
+               <div class="col-sm-10"><p class="small"><a href="#!">{{ sn.link }}</a></p></div>
+            </div>
+         </div>
+      </div>
+      <div class="dividewhite1"></div>
+
+   </div>
+</section>
