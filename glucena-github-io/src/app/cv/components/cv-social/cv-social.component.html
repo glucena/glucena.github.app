@@ -1,0 +1,9 @@
+<h5 class="font-accident-two-bold uppercase">Follow me</h5>
+<div class="follow">
+   <ul class="list-inline social">
+      <li class="list-inline-item" *ngFor="let sn of cvData.social">
+        <a target="_blank" [href]="sn.link" class="rst-icon-facebook"><i class="fa" [ngClass]="sn.icon"></i></a>
+      </li>
+   </ul>
+</div>
+<div class="divider-dynamic"></div>

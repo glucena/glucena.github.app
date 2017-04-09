@@ -1,16 +1,13 @@
 <section id="timeline" class="light inner-section">
-
          <div class="container-fluid nopadding">
-
-            <div class="text-center" data-animation-origin="top" data-animation-duration="400" data-animation-delay="400" data-animation-distance="30px" data-sr-id="18">
+            <div class="text-center"
+                 [ngsReveal]="{reset:true, origin:'top', distance:'30px', duration:400, delay:400}">
                <div class="dividewhite4"></div>
                <h3 class="font-accident-two-normal uppercase">Professional Timeline</h3>
                <h5 class="font-accident-two-normal uppercase subtitle">Working hard and making the success</h5>
                <div class="dividewhite1"></div>
                <p class="small fontcolor-medium">
-                  Customize your website as you want using different colors and 100% free fonts. Build it from pieces and
-                  blocks as simple as Lego. <br>
-                  Gridus Website Template is fully responsive, looks and works perfect on any device.
+                  
                </p>
             </div>
 
@@ -20,11 +17,7 @@
                 <li *ngFor="let job of cvData.employment; let isOdd=odd;" [ngClass]="{'timeline-inverted': isOdd}">
                   <div class="timeline-badge primary"><i class="flaticon-clocks18"></i></div>
                   <div class="timeline-panel"
-                       data-animation-origin="left"
-                       data-animation-duration="400"
-                       data-animation-delay="400"
-                       data-animation-distance="25px"
-                       data-sr-id="19">
+                       [ngsReveal]="{reset:true, origin: isOdd ? 'right' : 'left', distance:'25px', duration:400, delay:400}">
                      <p class="timeline-time fontcolor-invert">{{ job.from }} - {{ job.to }}</p>
                      <div class="timeline-photo" [ngClass]="job.image"></div>
                      <div class="timeline-heading">

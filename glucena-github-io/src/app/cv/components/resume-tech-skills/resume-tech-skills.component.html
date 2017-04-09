@@ -10,21 +10,19 @@
            </p>
            <div class="dividewhite6"></div>
         </div>
-        <div *ngFor="let category of cvData.skills.technical">
-            <h4 class="font-accident-two-normal uppercase text-center">{{ category.category }}</h4>
+        <div *ngFor="let category of cvData.skills.technical;">
+            <h4 class="font-accident-two-normal uppercase text-center category"
+                [ngsRevealSet]="{reset:true, origin:'top', distance:'30px', duration:400, delay:400}"
+                [ngsSelector]="'.category'">{{ category.category }}</h4>
             <div class="row">
                 <div class="col-md-3 infoblock text-center"
-                    data-animation-origin="left"
-                    data-animation-duration="400"
-                    data-animation-delay="400"
-                    data-animation-distance="50px"
-                    data-sr-id="14"
-                    *ngFor="let skill of category.skills">
-                  <div class="row">
+                     *ngFor="let skill of category.skills; let idx = index;">
+                  <div class="row"
+                       [ngsReveal]="{reset:true, origin:( (idx+4)%4 === 0 || (idx+3)%4 === 0 ) ? 'left' : 'right', distance:( (idx+3)%4 === 0 || (idx+2)%4 === 0 ) ? '25px' : '50px', delay: ( (idx+3)%4 === 0 || (idx+2)%4 === 0 ) ? 200 : 400, duration:400}">
                      <div class="col-md-12"><i class="colored" [ngClass]="skill.icon"></i></div>
                      <div class="col-md-12">
                         <div class="dividewhite1"></div>
-                        <h5 class="font-accident-two-bold uppercase">{{ skill.title }}</h5>
+                        <h5 class="font-accident-two-bold uppercase">{{ skill.title }} - {{ ( (idx+4)%4 === 0 || (idx+3)%4 === 0 ) ? 'left' : 'right' }}</h5>
                         <p class="small">
                            {{ skill.description }}
                         </p>

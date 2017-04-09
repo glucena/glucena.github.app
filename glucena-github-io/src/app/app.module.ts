@@ -11,7 +11,7 @@ import { NamePositionModule } from './cv/name-position.module';
 import { SummaryModule } from './cv/summary.module';
 import { ResumeModule } from './cv/resume.module';
 import { FooterModule } from './cv/footer.module';
-
+import { ContactsModule } from './cv/contacts.module';
 // Routing
 import { AppRoutingModule } from './app.routing.module';
 
@@ -32,6 +32,7 @@ import { AppComponent } from './app.component';
     ResumeModule,
     NamePositionModule,
     FooterModule,
+    ContactsModule,
     AppRoutingModule
   ],
   providers: [],
