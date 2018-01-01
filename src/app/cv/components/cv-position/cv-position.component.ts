@@ -22,5 +22,26 @@ export class CvPosition implements OnInit {
 
     ngOnInit () {
         this.cvData = this.cvService.getCvData();
+
+        setInterval(() => {
+            this.updateTitle();
+        }, 5000);
+    }
+
+    updateTitle() {
+        let toggled = false;
+        
+        const titleElem = document.querySelector(".cd-words-wrapper");
+        
+        Array.from(titleElem.children).forEach((item) => {
+            if (item.classList.contains('is-visible')) {
+                item.classList.remove('is-visible');
+                item.classList.add('is-hidden');
+            } else if (!toggled) {
+                item.classList.remove('is-hidden');
+                item.classList.add('is-visible');
+                toggled = true;
+            }
+        })
     }
 }

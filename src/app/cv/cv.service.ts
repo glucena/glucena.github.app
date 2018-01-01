@@ -157,16 +157,6 @@ export class CvService {
             category: 'Web development',
             skills: [
               {
-                title: 'python',
-                icon: 'devicon-python-plain',
-                description: "One of my favourites, I have been coding with it more than ten years. Web development, scripting, embeded programs... I have coded almost everything"
-              },
-              {
-                title: 'django',
-                icon: 'devicon-django-plain',
-                description: 'I love it. This is one of the easier framework I know to get a fullstack app working as soon as you can. Many apps have been developed by with it.' 
-              },
-              {
                 title: 'javaScript',
                 icon: 'devicon-javascript-plain',
                 description: "This is the main prgraming language I'am using currently. I can code in several version of this language from ECMA Script 5 to ES6 and beyond" 
@@ -179,13 +169,28 @@ export class CvService {
               {
                 title: 'angularjs',
                 icon: 'devicon-angularjs-plain',
-                description: 'Angular is the choice (for the moment) when I have to build a front end app. I can code angular apps in serveral versions from angular 1.4.x to angular 4 or "just angular" like many people say'  
+                description: 'Before Angular (2x and beyond) comes, AngularJS was the framework framework I had strongest knowledge. I mastered the framework, the best practices to build an app, the best ways to organice the code... but Angular arrived and everything change.'  
+              },
+              {
+                title: 'Angular',
+                icon: 'devicon-angularjs-plain',
+                description: 'Angular is the choice (for the moment) when I have to build a front end app. I love Angular and the way you can make your apps, so pretty and organized. Currectly I\'m learning a lot of thing day by day and reaching a good level of knowledge. I not an expert yet, but It\'s a matter of time. '  
               },
               {
                 title: 'typeScript',
                 icon: 'devicon-typescript-plain',
                 description: 'The last to come, It turns one of my favourites. I use it to develop the more recent angular apps' 
               },
+              {
+                title: 'python',
+                icon: 'devicon-python-plain',
+                description: "One of my favourites, I have been coding with it more than ten years. Web development, scripting, embeded programs... I have coded almost everything"
+              },
+              {
+                title: 'django',
+                icon: 'devicon-django-plain',
+                description: 'I love it. This is one of the easier framework I know to get a fullstack app working as soon as you can. Many apps have been developed by with it.' 
+              },              
               {
                 title: 'bootstrap',
                 icon: 'devicon-bootstrap-plain',
@@ -206,11 +211,6 @@ export class CvService {
           {
             category: 'Testing',
             skills: [
-            {
-                title: 'unittest',
-                icon: '',
-                description: 'The python library more used by me to implement unit tests' 
-              },
               {
                 title: 'mocha',
                 icon: 'devicon-mocha-plain',
@@ -230,6 +230,11 @@ export class CvService {
                 title: 'protractor',
                 icon: 'devicon-protractor-plain',
                 description: 'Protractor is the main tool I use to implement the front side end to end tests' 
+              },
+              {
+                title: 'unittest',
+                icon: '',
+                description: 'The python library more used by me to implement unit tests' 
               }
             ]
           },

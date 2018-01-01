@@ -2,5 +2,55 @@
 * @Author: Gabriel Lucena
 * @Date:   2017-02-19 18:29:52
 * @Last Modified by:   Gabriel Lucena
-* @Last Modified time: 2017-02-19 18:29:52
+* @Last Modified time: 2018-01-01 20:29:52
 */
+.cd-headline.clip span {
+    display: inline-block;
+    padding: .2em 0;
+}
+.cd-headline.clip .cd-words-wrapper {
+    overflow: hidden;
+    vertical-align: top;
+    white-space: nowrap;
+    display: inline-block;
+    padding: 0;
+
+    .inner {
+        overflow:hidden;
+        white-space:nowrap;
+        display:inline-block;
+        -webkit-transition: width 1s ease-in-out;
+        -moz-transition: width 1s ease-in-out;
+        -o-transition: width 1s ease-in-out;
+        transition: width 1s ease-in-out;
+        padding: .2em 0;
+        
+        &.is-visible {
+            width: 100%;
+            animation-delay: 0.5s;
+            &::after {
+                /* line */
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 2px;
+                height: 100%;
+                background-color: #aebcb9;
+            }
+        }
+        &.is-hidden {
+            width: 0%;
+            animation-duration: 0.5s;
+        }
+    }
+}
+.cd-headline.clip .cd-words-wrapper::after {
+    content: none !important;
+}
+.cd-headline.clip b {
+    opacity: 0;
+}
+.cd-headline.clip b.is-visible {
+    opacity: 1;
+}
