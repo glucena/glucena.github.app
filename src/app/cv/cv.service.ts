@@ -20,6 +20,7 @@ export class CvService {
         fullname: 'Gabriel Lucena Toro',
         birthDate: '12/01/1983',
         title: 'FullStack Developer',
+        altTitles: ['Software Engineer', 'JavaScript & python programmer'],
         address: 'Carretera de Trassierra, Córdoba, Spain',
         phone: '+34 123 456 789',
         email: 'gabriel.lucena.toro@gmail.com',
@@ -34,17 +35,20 @@ export class CvService {
         {
           name: 'twitter',
           icon: 'fa-twitter',
-          link: 'https://twitter.com/glucenat'
+          link: 'https://twitter.com/glucenat',
+          linkDescription: '@glucenat'
         },
         {
           name: 'github',
           icon: 'fa-github',
-          link: 'http://github.com/glucena/'
+          link: 'http://github.com/glucena/',
+          linkDescription: 'github.com/glucena'
         },
         {
           name: 'linkedin',
           icon: 'fa-linkedin',
-          link: 'www.linkedin.com/in/gabriel-lucena-toro'
+          link: 'http://www.linkedin.com/in/gabriel-lucena-toro',
+          linkDescription: 'linkedin.com/in/gabriel-lucena-toro'
         }
       ],
       employment: [

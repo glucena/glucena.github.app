@@ -6,8 +6,7 @@
             <span>The experienced </span>
             <span class="cd-words-wrapper">
                <b class="inner is-visible">{{ cvData.personalData.title }}</b>
-               <b class="inner is-hidden">Web Designer</b>
-               <b class="inner is-hidden">Photographer</b>
+               <b class="inner is-hidden" *ngFor="let title of cvData.personalData.altTitles">{{title}}</b>
             </span>
          </h2>
       </section>
