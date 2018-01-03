@@ -12,6 +12,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { SummaryComponent } from './cv/containers/summary/summary.component';
 import { ResumeComponent } from './cv/containers/resume/resume.component';
 import { ContactsComponent } from './cv/containers/contacts/contacts.component';
+import { DetailedCvComponent } from './cv/containers/detailed-cv/detailed-cv.component';
+
 
 // Define routes
 const appRoutes: Routes = [
@@ -31,7 +33,12 @@ const appRoutes: Routes = [
     {
         path: 'contacts',
         component: ContactsComponent
-    }
+    },
+    {
+        path: 'detailed-cv',
+        component: DetailedCvComponent
+    },
+    { path: '**', redirectTo: 'summary' }
 ];
 
 @NgModule({
