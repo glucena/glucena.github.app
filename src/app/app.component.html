@@ -1,4 +1,4 @@
-<header>
+<header *ngIf="!isHidden()">
    <section id="top-navigation" class="container-fluid nopadding">
       <div class="row nopadding ident ui-bg-color01">
          <!-- Photo -->
@@ -12,7 +12,6 @@
             <!-- /Name-Position -->
 
             <!-- Main Navigation -->
-
             <ul id="nav" class="row nopadding cd-side-navigation"
                [ngsRevealSet]="{reset:true, rotate: { x: 10, y: 90, z: 0 }}" [ngsInterval]="200" [ngsSelector]="'.menuitem'">
                <li class="col-xs-4 col-sm-2 nopadding menuitem ui-menu-color01" ngsReveal>
@@ -34,7 +33,6 @@
                   <a href="blog-3-col.html" class="hvr-sweep-to-bottom"><i class="flaticon-pens15"></i><span>blog</span></a>
                </li>
             </ul>
-
             <!-- /Main Navigation -->
 
          </div>
@@ -43,6 +41,5 @@
 </header>
 <div class="content-wrap">
    <router-outlet></router-outlet>
-	<!--<summary></summary>-->
 </div>
-<cv-footer></cv-footer>
+<cv-footer *ngIf="!isHidden()"></cv-footer>
