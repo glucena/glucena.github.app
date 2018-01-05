@@ -22,6 +22,7 @@ import { DetailedCvComponent } from './containers/detailed-cv/detailed-cv.compon
 @NgModule({
     declarations: [
         // register container component
+        DetailedCvComponent
     ],
     imports: [
         CommonModule,

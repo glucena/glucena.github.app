@@ -6,6 +6,7 @@
 */
 
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router'; 
 
 import { CvService } from '../../cv.service';
 
@@ -22,9 +23,17 @@ export class ResumeTimeline implements OnInit {
 
     cvData: any;
     
-    constructor ( private cvService : CvService ) {};
+    constructor (
+        private cvService : CvService,
+        private route: ActivatedRoute,
+        private router: Router
+    ) {};
 
     ngOnInit () {
         this.cvData = this.cvService.getCvData();
+    }
+
+    goToDetailedCv () {
+        this.router.navigate(['detailed-cv']);
     }
 }
