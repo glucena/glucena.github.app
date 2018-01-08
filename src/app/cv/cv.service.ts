@@ -124,12 +124,12 @@ export class CvService {
         summary: 'JavaScript & python developer. MEAN stack expert',
         professional: [
           {
-            level: 90,
+            level: 95,
             title: 'Web development',
             description: 'More than 10 years of experiencie developing with many plaforms such as MEAN, Django, Flask, Bottlepy...'
           },
           {
-            level: 95,
+            level: 90,
             title: 'Fullstack',
             description: 'No matter where a solution is needed. I can handle it'
           },

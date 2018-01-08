@@ -16,8 +16,8 @@ import { CvService } from './cv.service'
 // Containers
 import { DetailedCvComponent } from './containers/detailed-cv/detailed-cv.component';
 
-// Components
-
+// Directives
+import { DirectivesModule } from './directives/directives.module';
 
 @NgModule({
     declarations: [
@@ -27,7 +27,8 @@ import { DetailedCvComponent } from './containers/detailed-cv/detailed-cv.compon
     imports: [
         CommonModule,
         NgbModule,
-        NgsRevealModule
+        NgsRevealModule,
+        DirectivesModule
     ],
     providers: [
         CvService

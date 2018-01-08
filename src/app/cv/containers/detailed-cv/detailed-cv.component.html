@@ -42,7 +42,7 @@
         <div id="summary" class="col-md-8 flex-column light padding-30 flex-panel">
             <div class="row flex-row">
                 <div class="col-md-3 flex-column">
-                    <img id="photo" src="assets/img/profile.jpg"/>
+                    <img id="photo" src="assets/img/profile.jpg" />
                 </div>
                 <div class="col-md-9 flex-column">
                     {{ cvData.summary }}
@@ -52,4 +52,19 @@
     </div>
 
     <h3>Top Skills</h3>
+    <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12 nopadding" *ngFor="let skill of cvData.skills.professional;let i = index">
+            <div class="progressbar text-center">
+                <div [id]="'circle' + ( i + 1 )" [progressBar]="'circle'" [progressBarColor]="'#fff'" [progressBarTrailColor]="'#fff'" [progressBarFrom]='{"color": "#3498db", "width": 4}'
+                    [progressBarTo]='{"color": "#ffd200", "width": 4}' [progressBarValue]="skill.level / 100">
+                </div>
+                <h4 class="font-accident-two-bold uppercase">{{ skill.title }}</h4>
+                <p class="font-regular-normal">
+                    {{ skill.description }}
+                </p>
+                <a routerLink="/resume" routerLinkActive="active" class="btn btn-wh-trans btn-xs">Learn More</a>
+            </div>
+            <div class="dividewhite1"></div>
+        </div>
+    </div>
 </div>

@@ -22,12 +22,11 @@ import { SummaryDetails } from './components/summary-details/summary-details.com
 import { SummaryEmployment } from './components/summary-employment/summary-employment.component';
 import { SummarySkills } from './components/summary-skills/summary-skills.component';
 
-// Directive
-import { ProgressBarDirective } from './directives/progressbar.directive';
+//Directives
+import { DirectivesModule } from './directives/directives.module';
 
 // Routing
 import { AppRoutingModule } from '../app.routing.module';
-
 
 @NgModule({
     declarations: [
@@ -36,14 +35,14 @@ import { AppRoutingModule } from '../app.routing.module';
         SummaryPersonalInfo,
         SummaryDetails,
         SummaryEmployment,
-        SummarySkills,
-        ProgressBarDirective
+        SummarySkills
     ],
     imports: [
         CommonModule,
         NgbModule,
         AppRoutingModule,
-        NgsRevealModule
+        NgsRevealModule,
+        DirectivesModule
     ],
     providers: [
         CvService
