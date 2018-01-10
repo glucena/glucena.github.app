@@ -29,7 +29,11 @@ export class CvService {
       academic: {
         title: 'Technical Engineering in Computer Systems',
         from: 2001,
-        to: 2005
+        to: 2005,
+        where: 'Escuela Politécnica Superior, Universidad de Córdoba',
+        courses: [
+
+        ]
       },
       social: [
         {
