@@ -67,13 +67,49 @@
             <div id="circle-skills" class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12 padding-30" *ngFor="let skill of cvData.skills.professional;let i = index">
                     <div class="progressbar text-center">
-                        <div [id]="'circle' + ( i + 1 )" [progressBar]="'circle'" [progressBarColor]="'#000000'" [progressBarTrailColor]="'#ccc'" [progressBarFrom]='{"color": "#3498db", "width": 4}'
-                            [progressBarTo]='{"color": "#3497db", "width": 5}' [progressBarValue]="skill.level / 100">
+                        <div [id]="'circle' + ( i + 1 )" [progressBar]="'circle'" [progressBarColor]="'#000000'" [progressBarTrailColor]="'#ccc'"
+                            [progressBarFrom]='{"color": "#3498db", "width": 4}' [progressBarTo]='{"color": "#3497db", "width": 5}'
+                            [progressBarValue]="skill.level / 100">
                         </div>
                         <h4 class="font-accident-two-bold uppercase">{{ skill.title }}</h4>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="row flex-row ui-block-color01">
+        <div id="pro-experience" class="col-md-9 flex-column light padding-30 flex-panel">
+            <h3>Experience</h3>
+            <div class="experience">
+                <ul class="" *ngFor="let item of cvData.employment">
+                    <li class="date">{{ item.from }} - {{ item.to }}</li>
+                    <li class="company uppercase">
+                        <a>
+                            {{ item.where }}
+                        </a>
+                    </li>
+                    <li class="position">{{ item.jobPosition }}</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3 flex-column light padding-30 flex-panel">
+            <h3>Skills</h3>
+            <ul>
+                <li *ngFor="let category of cvData.skills.technical; let i = index">
+                    <h4>{{ category.category }}</h4>
+                    <ul>
+                        <li  class="dividewhite4" *ngFor="let skill of category.skills; let i = index">
+                            <div class="progressbar text-center">
+                                <h4 class="font-accident-two-bold uppercase">{{ skill.title }}</h4>
+                                <div [id]="'line' + ( i + 1 )" [progressBar]="'line'" [progressBarColor]="'#000000'" [progressBarTrailColor]="'#ccc'" [progressBarFrom]='{"color": "#3498db", "width": 4}'
+                                    [progressBarTo]='{"color": "#3497db", "width": 5}' [progressBarValue]="skill.level / 100">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
     <button (click)="printPDF()">PDF</button>

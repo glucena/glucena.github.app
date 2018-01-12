@@ -29,14 +29,11 @@ export class DetailedCvComponent {
     printPDF () {
         debugger
         let doc = new jsPDF();
-
-        doc.setFontSize(30); 
-        doc.text(12, 10, "Title");
  
         let element = <HTMLScriptElement>document.getElementsByTagName("detailed-cv")[0];
         html2canvas(element)
         .then((canvas: any) => {
-            doc.addImage(canvas.toDataURL("image/jpeg"), "JPEG", 0, 50, doc.internal.pageSize.width, element.offsetHeight / 5 );
+            doc.addImage(canvas.toDataURL("image/jpeg"), "JPEG", 0, 0, doc.internal.pageSize.width, element.offsetHeight / 5 );
             doc.save(`Report-${Date.now()}.pdf`);
         })
     }

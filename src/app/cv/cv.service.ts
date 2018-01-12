@@ -160,6 +160,13 @@ export class CvService {
             description: 'A deadline is a compromise'
           }
         ],
+        organizative: [
+          {
+            title: '',
+            icon: '',
+            description: ''
+          }
+        ],
         technical: [
           {
             category: 'Web development',
@@ -167,52 +174,62 @@ export class CvService {
               {
                 title: 'javaScript',
                 icon: 'devicon-javascript-plain',
-                description: "This is the main prgraming language I'am using currently. I can code in several version of this language from ECMA Script 5 to ES6 and beyond" 
+                description: "This is the main prgraming language I'am using currently. I can code in several version of this language from ECMA Script 5 to ES6 and beyond" ,
+                level: 95
               },
               {
                 title: 'nodejs',
                 icon: 'devicon-nodejs-plain',
-                description: 'This is my reference framework currently, I ve made a lot of apps using that: Monolitics apps (sorry for that), microsevices, devop apps, packages...' 
+                description: 'This is my reference framework currently, I ve made a lot of apps using that: Monolitics apps (sorry for that), microsevices, devop apps, packages...',
+                level: 95
               },
               {
                 title: 'angularjs',
                 icon: 'devicon-angularjs-plain',
-                description: 'Before Angular (2x and beyond) comes, AngularJS was the framework framework I had strongest knowledge. I mastered the framework, the best practices to build an app, the best ways to organice the code... but Angular arrived and everything change.'  
+                description: 'Before Angular (2x and beyond) comes, AngularJS was the framework framework I had strongest knowledge. I mastered the framework, the best practices to build an app, the best ways to organice the code... but Angular arrived and everything change.'  ,
+                level: 95
               },
               {
                 title: 'Angular',
                 icon: 'devicon-angularjs-plain',
-                description: 'Angular is the choice (for the moment) when I have to build a front end app. I love Angular and the way you can make your apps, so pretty and organized. Currectly I\'m learning a lot of thing day by day and reaching a good level of knowledge. I not an expert yet, but It\'s a matter of time. '  
+                description: 'Angular is the choice (for the moment) when I have to build a front end app. I love Angular and the way you can make your apps, so pretty and organized. Currectly I\'m learning a lot of thing day by day and reaching a good level of knowledge. I not an expert yet, but It\'s a matter of time. '  ,
+                level: 70
               },
               {
                 title: 'typeScript',
                 icon: 'devicon-typescript-plain',
-                description: 'The last to come, It turns one of my favourites. I use it to develop the more recent angular apps' 
+                description: 'The last to come, It turns one of my favourites. I use it to develop the more recent angular apps',
+                level: 70
               },
               {
                 title: 'python',
                 icon: 'devicon-python-plain',
-                description: "One of my favourites, I have been coding with it more than ten years. Web development, scripting, embeded programs... I have coded almost everything"
+                description: "One of my favourites, I have been coding with it more than ten years. Web development, scripting, embeded programs... I have coded almost everything",
+                level: 65
               },
               {
                 title: 'django',
                 icon: 'devicon-django-plain',
-                description: 'I love it. This is one of the easier framework I know to get a fullstack app working as soon as you can. Many apps have been developed by with it.' 
+                description: 'I love it. This is one of the easier framework I know to get a fullstack app working as soon as you can. Many apps have been developed by with it.',
+                level: 50
               },              
               {
                 title: 'bootstrap',
                 icon: 'devicon-bootstrap-plain',
-                description: 'Thanks to this framework for make easy the work to make the apps look great' 
+                description: 'Thanks to this framework for make easy the work to make the apps look great',
+                level: 95
               },
               {
                 title: 'html5',
                 icon: 'devicon-html5-plain',
-                description: '' 
+                description: '',
+                level: 95
               },
               {
                 title: 'css3',
                 icon: 'devicon-css3-plain',
-                description: '' 
+                description: '',
+                level: 90
               }
             ]
           },
@@ -222,27 +239,32 @@ export class CvService {
               {
                 title: 'mocha',
                 icon: 'devicon-mocha-plain',
-                description: 'This is my first choice to implement unit testing suites for the server side' 
+                description: 'This is my first choice to implement unit testing suites for the server side',
+                level: 90
               },
               {
                 title: 'karma',
                 icon: '',
-                description: 'Used as font end tests runner' 
+                description: 'Used as font end tests runner',
+                level: 90
               },
               {
                 title: 'jasmine',
                 icon: 'devicon-jasmine-plain',
-                description: 'Used in conjuntion with karma to make unit testing for the client side' 
+                description: 'Used in conjuntion with karma to make unit testing for the client side',
+                level: 90
               },
               {
                 title: 'protractor',
                 icon: 'devicon-protractor-plain',
-                description: 'Protractor is the main tool I use to implement the front side end to end tests' 
+                description: 'Protractor is the main tool I use to implement the front side end to end tests',
+                level: 60
               },
               {
                 title: 'unittest',
                 icon: '',
-                description: 'The python library more used by me to implement unit tests' 
+                description: 'The python library more used by me to implement unit tests',
+                level: 90
               }
             ]
           },
@@ -252,22 +274,26 @@ export class CvService {
               {
                 title: 'mongodb',
                 icon: 'devicon-mongodb-plain',
-                description: "The reference noSQL database. I'm a experienced developer in this technology. I've used it for many years" 
+                description: "The reference noSQL database. I'm a experienced developer in this technology. I've used it for many years" ,
+                level: 90
               },
               {
                 title: 'mySQL',
                 icon: 'devicon-mysql-plain',
-                description: 'Many relational schemas and databases are being defined by me using that' 
+                description: 'Many relational schemas and databases are being defined by me using that',
+                level: 90
               },
               {
                 title: 'postgresql',
                 icon: 'devicon-postgresql-plain',
-                description: 'With mySQL is the main database I use to define relational schemas' 
+                description: 'With mySQL is the main database I use to define relational schemas',
+                level: 70
               },
               {
                 title: 'redis',
                 icon: 'devicon-redis-plain',
-                description: "I usually to work with redis to implement cache systems and message queues"
+                description: "I usually to work with redis to implement cache systems and message queues",
+                level: 70
               }
             ]
           },
@@ -277,22 +303,26 @@ export class CvService {
               {
                 title: 'grunt',
                 icon: 'devicon-grunt-plain',
-                description: '' 
+                description: '',
+                level: 30
               },
               {
                 title: 'gulp',
                 icon: 'devicon-gulp-plain',
-                description: '' 
+                description: '',
+                level: 50
               },
               {
                 title: 'webpack',
                 icon: 'devicon-webpack-plain',
-                description: '' 
+                description: '',
+                level: 30
               },
               {
                 title: 'docker',
                 icon: 'devicon-docker-plain',
-                description: '' 
+                description: '',
+                level: 30
               },
             ]
           }
