@@ -61,9 +61,23 @@ export class CvService {
           to: 'now',
           where: 'SEPALO Software',
           jobPosition: 'Software engineer',
-          description: 'Web apps developer implementing project using the MEAN stack',
+          description: 'Web apps developer implementing loyalty, engagement and gamification applications. The main technologies used in this period were the related to the MEAN stack.',
           image: 'building-baobab',
           projects: [
+            {
+              title: 'The island',
+              description: "Development of a Gamification Platform to manage the user onboarding process. Developed for a manufacturer of  printers and scanner based in the USA.",
+              resposabilities: [
+                'Frontent app devolopment',
+                'Design & implementation of the app\'s scaffolding',
+                'Integration with the Sepalo Gamification Core'
+              ],
+              tags: [
+                'Javascript',
+                'AngularJS',
+                'NodeJS'
+              ]
+            },
             {
               title: 'Loyalty Manager',
               description: "Development of a Gamification Platform to manage the customer's engagement for an important client from the spanish textile sector.",
@@ -71,6 +85,13 @@ export class CvService {
                 'Frontent app devolopment',
                 'REST API services implementation',
                 'Technical support'
+              ],
+              tags: [
+                'Javascript',
+                'AngularJS',
+                'NodeJS',
+                'Mocha',
+                'Jasmine'
               ]
             }
           ],

@@ -90,6 +90,14 @@
                         </a>
                     </li>
                     <li class="position">{{ item.jobPosition }}</li>
+                    <li class="description">{{ item.description }}</li>
+                    <li> Main projects:
+                        <ul>
+                            <li *ngFor="let project of item.projects">
+                                {{ project.title }}
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
