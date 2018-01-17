@@ -65,6 +65,21 @@ export class CvService {
           image: 'building-baobab',
           projects: [
             {
+              title: 'Client mobile apps',
+              description: "Implementation of four mobile applications for one of the spanish most important brands from the textile sector. The apps give to the customers the posibility to manage their loyalty account, find a shop or buy products online",
+              resposabilities: [
+                'Hybrib app devolopment',
+                'Integration with the Client online shop',
+                'Integration with the Client backends'
+              ],
+              tags: [
+                'Javascript',
+                'Angular',
+                'Ionic framework',
+                'Webpack'
+              ]
+            },
+            {
               title: 'The island',
               description: "Development of a Gamification Platform to manage the user onboarding process. Developed for a manufacturer of  printers and scanner based in the USA.",
               resposabilities: [
