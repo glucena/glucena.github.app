@@ -94,7 +94,15 @@
                     <li> Main projects:
                         <ul>
                             <li *ngFor="let project of item.projects">
-                                {{ project.title }}
+                                <strong>{{ project.title }}:</strong> {{ project.description }}
+                                <ul class="project-tags">
+                                    <li *ngFor="let tag of project.tags">
+                                        <div class="chip">
+                                            <i class="colored" [ngClass]="tag.icon"></i>
+                                            {{ tag.label }}
+                                        </div>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </li>

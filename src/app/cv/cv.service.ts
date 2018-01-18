@@ -65,7 +65,7 @@ export class CvService {
           image: 'building-baobab',
           projects: [
             {
-              title: 'Client mobile apps',
+              title: 'Client\'s mobile apps',
               description: "Implementation of four mobile applications for one of the spanish most important brands from the textile sector. The apps give to the customers the posibility to manage their loyalty account, find a shop or buy products online",
               resposabilities: [
                 'Hybrib app devolopment',
@@ -73,10 +73,10 @@ export class CvService {
                 'Integration with the Client backends'
               ],
               tags: [
-                'Javascript',
-                'Angular',
-                'Ionic framework',
-                'Webpack'
+                {label: 'Typescript', icon: 'devicon-typescript-plain'},
+                {label: 'Angular', icon: 'devicon-angularjs-plain'},
+                {label: 'Ionic framework', icon: 'devicon-ionic-plain'},
+                {label: 'Webpack', icon: 'devicon-webpack-plain'}
               ]
             },
             {
@@ -88,9 +88,12 @@ export class CvService {
                 'Integration with the Sepalo Gamification Core'
               ],
               tags: [
-                'Javascript',
-                'AngularJS',
-                'NodeJS'
+                {label: 'Javascript', icon: 'devicon-javascript-plain'},
+                {label: 'AngularJs', icon: 'devicon-angularjs-plain'},
+                {label: 'NodeJS', icon: 'devicon-nodejs-plain'},
+                {label: 'Mocha', icon: 'devicon-mocha-plain'},
+                {label: 'Jasmine', icon: 'devicon-jasmine-plain'}
+                
               ]
             },
             {
@@ -102,11 +105,11 @@ export class CvService {
                 'Technical support'
               ],
               tags: [
-                'Javascript',
-                'AngularJS',
-                'NodeJS',
-                'Mocha',
-                'Jasmine'
+                {label: 'Javascript', icon: 'devicon-javascript-plain'},
+                {label: 'AngularJs', icon: 'devicon-angularjs-plain'},
+                {label: 'NodeJS', icon: 'devicon-nodejs-plain'},
+                {label: 'Mocha', icon: 'devicon-mocha-plain'},
+                {label: 'Jasmine', icon: 'devicon-jasmine-plain'}
               ]
             }
           ],

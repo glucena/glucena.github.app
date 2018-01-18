@@ -19,3 +19,33 @@ h2 {
 #circle-skills .progressbar .progressbar-text {
     color: black !important;
 }
+
+ul.project-tags {
+    li {
+        display:inline;
+        padding-left:3px;
+        padding-right:3px;
+    }
+}
+
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: rgb(52, 150, 219);
+    color: white;
+}
+
+.chip i {
+    float: left;
+    margin: 0 10px 0 -25px;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 50%;
+}

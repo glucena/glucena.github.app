@@ -15,7 +15,11 @@ import { CvService } from '../../cv.service';
 @Component( {
     selector: 'detailed-cv',
     templateUrl: './detailed-cv.component.html',
-    styleUrls: ['./detailed-cv.component.scss']
+    styleUrls: [
+        './detailed-cv.component.scss',
+        '../../../../assets/css/devicon.css',
+        '../../../../assets/css/devicon-colors.css'
+    ]
 } )
 export class DetailedCvComponent {
     cvData: any;
