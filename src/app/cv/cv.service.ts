@@ -112,11 +112,6 @@ export class CvService {
                 {label: 'Jasmine', icon: 'devicon-jasmine-plain'}
               ]
             }
-          ],
-          tags: [
-            'Javascript',
-            'AngularJS',
-            'NodeJS'
           ]
         }, {
           from: '08/2013',
@@ -126,13 +121,36 @@ export class CvService {
           description: 'Software developer implementing custom applications and Smart Cities products.',
           image: 'building-once',
           projects: [
-          ],
-          tags: [
-            'Javascript',
-            'AngularJS',
-            'NodeJS',
-            'Django',
-            'Python'
+            {
+              title: 'Public lightning platform',
+              description: "Design and implementation of a public lightning management platfom. The platform implements many functionalities such as inventory management, assets geolocation, maintenance management, and lightning remote control and programation",
+              resposabilities: [
+                'Architecture co-design',
+                'Backend & frontend implementation',
+                'Third parties integration',
+                'Technical support'
+              ],
+              tags: [
+                {label: 'Django', icon: 'devicon-django-plain'},
+                {label: 'AngularJs', icon: 'devicon-angularjs-plain'},
+                {label: 'd3', icon: 'devicon-d3js-plain'},
+                {label: 'MongoDB', icon: 'devicon-mongodb-plain'},
+                {label: 'Redis', icon: 'devicon-redis-plain'}
+              ]
+            },
+            {
+              title: 'CTBox',
+              description: "Design and implementation of an embeded software for a surveilance device developed for Endesa Ingeniería. The software passed all the applicable audits accoding to the EN 50131 normative that defines European Standards for Intruder Alarm Systems. The device is currently on service in more than 200 electrical transformation facilities.",
+              resposabilities: [
+                'Sofware design and implementation',
+                'Integration with backend services',
+                'Quality assurance'
+              ],
+              tags: [
+                {label: 'python', icon: 'devicon-python-plain'},
+                {label: 'unittest', icon: 'devicon-unittest-plain'}
+              ]
+            }
           ]
         }, {
           from: '04/2011',
