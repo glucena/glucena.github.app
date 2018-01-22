@@ -150,6 +150,22 @@ export class CvService {
                 {label: 'python', icon: 'devicon-python-plain'},
                 {label: 'unittest', icon: 'devicon-unittest-plain'}
               ]
+            },
+            {
+              title: 'Quamtra (fromerly eGarbage)',
+              description: "Co-Design and implementation of Quantra: an intelligent urban waste collection system allowing, by sensing and constant monitoring of the filling level of the containers, optimize routes and improve the costs associated with the collection.",
+              resposabilities: [
+                'Architecture co-design and implementation',
+                'REST API implementation',
+                'Sensors integration'
+              ],
+              tags: [
+                {label: 'Javascript', icon: 'devicon-javascript-plain'},
+                {label: 'MongoDB', icon: 'devicon-mongodb-plain'},
+                {label: 'Express', icon: 'devicon-express-original'},
+                {label: 'AngularJs', icon: 'devicon-angularjs-plain'},
+                {label: 'NodeJS', icon: 'devicon-nodejs-plain'}
+              ]
             }
           ]
         }, {
