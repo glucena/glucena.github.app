@@ -11,7 +11,19 @@ h2 {
 #summary {
     background: white;
     padding: 2em;
+    margin-top: 30px;
+
+    > * {
+        max-width: 1130px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #header {
+
+    }
 }
+
 #photo {
     width: 100%;
 }
