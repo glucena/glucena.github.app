@@ -2,11 +2,6 @@ h1 {
 
 }
 
-h2 {
-    font-size: 24px !important;
-    line-height: 2.7em;
-    white-space: nowrap;
-}
 
 #summary {
     background: white;
@@ -20,7 +15,35 @@ h2 {
     }
 
     #header {
-
+        display:table;
+        table-layout:fixed;
+        
+        h1 {
+            font-weight: lighter;
+            color: #8ab5ba;
+        }
+        h2 {
+            font-size: 24px !important;
+            white-space: nowrap;
+        }
+        img.portrait {
+            border-radius: 50%;
+            height: 170px;
+        }
+        div.table-cell {
+            float: none;
+            display: table-cell;
+            padding-right: 20px;
+        }
+        div:nth-child(1) {
+            width: 20%;
+        }
+        div:nth-child(2) {
+            width: 60%;
+        }
+        div:nth-child(3) {
+            width: 20%;
+        }
     }
 }
 
