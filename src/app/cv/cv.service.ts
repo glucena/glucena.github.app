@@ -24,7 +24,8 @@ export class CvService {
         address: 'Carretera de Trassierra, Córdoba, Spain',
         phone: '+34 123 456 789',
         email: 'gabriel.lucena.toro@gmail.com',
-        skype: '@glucenat'
+        skype: '@glucenat',
+        website: 'https://glucena.github.io'
       },
       academic: {
         title: 'Technical Engineering in Computer Systems',

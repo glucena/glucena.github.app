@@ -7,11 +7,17 @@
             <h1 class="font-accident-two-extralight">{{ cvData.personalData.fullname }}</h1>
             <h2 class="font-accident-two-extralight">{{ cvData.personalData.title }}</h2>
         </div>
-        <div class="table-cell">
-            
+        <div class="table-cell v-top">
+            <dl>
+                <dt>Email:</dt><dd>{{ cvData.personalData.email }}</dd>
+                <dt>Phone:</dt><dd>{{ cvData.personalData.phone }}</dd>
+                <dt>Web:</dt><dd>{{ cvData.personalData.website }}</dd>
+                <dt><i class="fa fa-twitter"></i></dt><dd>{{ cvData.social[0].linkDescription }}</dd>
+                <dt><i class="fa fa-linkedin"></i></dt><dd>{{ cvData.social[2].linkDescription }}</dd>
+                <dt><i class="fa fa-github"></i></dt><dd>{{ cvData.social[1].linkDescription }}</dd>
+            </dl>
         </div>
     </div>
-
 
     <h3>About me</h3>
     <div class="row flex-row">
