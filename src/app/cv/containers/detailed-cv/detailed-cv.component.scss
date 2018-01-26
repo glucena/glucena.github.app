@@ -67,6 +67,24 @@ h1 {
             width: 30%;
         }
     }
+
+    #about {
+        h3 {
+            font-weight: lighter;
+            color: #8ab5ba;
+        }
+        .title{
+            width: 30%;
+            float: none;
+            display: table-cell;
+        }
+        .content {
+            float: none;
+            display: table-cell;
+            text-align: justify;
+            width: 70%;
+        }
+    }
 }
 
 #photo {
