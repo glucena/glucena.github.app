@@ -5,6 +5,7 @@ h1 {
 
 #summary {
     background: white;
+    color: #828282;
     padding: 2em;
     margin-top: 30px;
 
@@ -48,12 +49,12 @@ h1 {
                 font-size: 13px;
             }
             dd {
-                width: 50%;
+                width: 75%;
                 float: left;
             }
             dt {
                 font-weight: normal;
-                width: 48%;
+                width: 25%;
                 float: left;
             }
         }
@@ -68,7 +69,9 @@ h1 {
         }
     }
 
-    #about {
+    #about, #experience {
+        display: flex;
+
         h3 {
             font-weight: lighter;
             color: #8ab5ba;
@@ -83,6 +86,14 @@ h1 {
             display: table-cell;
             text-align: justify;
             width: 70%;
+            p {
+                color: #828282;
+            }
+            .position {
+                color: #8ab5ba;
+                font-size: 29px;
+                font-weight: lighter;
+            }
         }
     }
 }

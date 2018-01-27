@@ -20,6 +20,7 @@
     </div>
     
     <hr/>
+
     <div id="about">
         <div class="title">
             <h3>About me</h3>
@@ -27,53 +28,39 @@
         <div class="content">
             <p>{{ cvData.summary }}</p>
         </div>
-
     </div>
 
-    <div class="row flex-row">
-        <div id="personal" class="col-md-4 flex-column light padding-30 flex-panel">
-            <div class="fullwidth box">
-                <div class="one">
-                    <p class="uppercase text-nowrap">Birth Date:</p>
-                </div>
-                <div class="two">
-                    <p class="">{{ cvData.personalData.birthDate }}</p>
-                </div>
-            </div>
-            <div class="fullwidth box">
-                <div class="one">
-                    <p class="uppercase">Address:</p>
-                </div>
-                <div class="two">
-                    <p class="">{{ cvData.personalData.address }}</p>
-                </div>
-            </div>
-            <div class="fullwidth box">
-                <div class="one">
-                    <p class="uppercase">Phone:</p>
-                </div>
-                <div class="two">
-                    <p class="">{{ cvData.personalData.phone }}</p>
-                </div>
-            </div>
-            <div class="fullwidth box">
-                <div class="one">
-                    <p class="uppercase">Email:</p>
-                </div>
-                <div class="two">
-                    <p class="">{{ cvData.personalData.email }}</p>
-                </div>
-            </div>
+    <hr/>
+
+    <div id="experience">
+        <div class="title">
+            <h3>Experience</h3>
         </div>
-        <div id="summary" class="col-md-8 flex-column light padding-30 flex-panel">
-            <div class="row flex-row">
-                <div class="col-md-3 flex-column">
-                    <img id="photo" src="assets/img/profile.jpg" />
+        <div class="content">
+            
+            <div class="" *ngFor="let item of cvData.employment">
+                <div class="date">{{ item.from }} - {{ item.to }}</div>
+                <div class="position">{{ item.jobPosition }} at {{ item.where }}</div>
+                <div class="description">{{ item.description }}</div>
+                <div class="projects">
+                    <p>Main projects:</p>
+                    <ul>
+                        <li *ngFor="let project of item.projects">
+                            <strong>{{ project.title }}:</strong> {{ project.description }}
+                            <ul class="project-tags">
+                                <li *ngFor="let tag of project.tags">
+                                    <div class="chip">
+                                        <i class="colored" [ngClass]="tag.icon"></i>
+                                        {{ tag.label }}
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-9 flex-column">
-                    {{ cvData.summary }}
-                </div>
+                <hr class="hr-short"/>
             </div>
+        
         </div>
     </div>
 
