@@ -5,12 +5,14 @@
 * @Last Modified time: 2018-01-11 21:34:19
 */
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 import * as jsPDF from "jspdf";
 import * as html2canvas from 'html2canvas';
 
 import { CvService } from '../../cv.service';
+
+window.html2canvas = html2canvas;
 
 @Component( {
     selector: 'detailed-cv',
@@ -22,6 +24,9 @@ import { CvService } from '../../cv.service';
     ]
 } )
 export class DetailedCvComponent {
+
+    @ViewChild('summary') el: ElementRef;
+    
     cvData: any;
     
     constructor ( private cvService : CvService ) {};
@@ -31,14 +36,19 @@ export class DetailedCvComponent {
     }
 
     printPDF () {
-        debugger
-        let doc = new jsPDF();
+        let doc = new jsPDF('1', 'pt', 'a4');
  
-        let element = <HTMLScriptElement>document.getElementsByTagName("detailed-cv")[0];
-        html2canvas(element)
+        let options = {
+            pagesplit: true
+         };
+         
+         doc.addHTML(this.el.nativeElement, 0, 0).then(() => doc.save("test.pdf"));
+        /*html2canvas(element)
         .then((canvas: any) => {
             doc.addImage(canvas.toDataURL("image/jpeg"), "JPEG", 0, 0, doc.internal.pageSize.width, element.offsetHeight / 5 );
             doc.save(`Report-${Date.now()}.pdf`);
         })
+        */
+        
     }
 }

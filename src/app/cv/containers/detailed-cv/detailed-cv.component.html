@@ -1,4 +1,4 @@
-<div id="summary">
+<div id="summary" #summary>
     <div id="header">
         <div class="table-cell">
             <img class="portrait" src="assets/img/profile.jpg" />
@@ -46,7 +46,8 @@
                     <p>Main projects:</p>
                     <ul>
                         <li *ngFor="let project of item.projects">
-                            <strong>{{ project.title }}:</strong> {{ project.description }}
+                            <strong>{{ project.title }}</strong> 
+                            <p>{{ project.description }}</p>
                             <ul class="project-tags">
                                 <li *ngFor="let tag of project.tags">
                                     <div class="chip">

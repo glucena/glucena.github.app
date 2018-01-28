@@ -106,32 +106,46 @@ h1 {
     color: black !important;
 }
 
+.projects {
+    > p {
+        font-size: 16px;
+        padding-top: 1em;    
+    }
+    > ul {
+        padding-left: 3em;
+        list-style: disc outside;
+        li {
+            margin-bottom: 2em;
+        }
+    }
+}
+
 ul.project-tags {
     li {
-        display:inline;
-        padding-left:3px;
-        padding-right:3px;
+        display: inline;
+        padding-left: 3px;
+        padding-right: 3px;
     }
 }
 
 .chip {
     display: inline-block;
-    padding: 0 25px;
-    height: 50px;
-    font-size: 16px;
-    line-height: 50px;
-    border-radius: 25px;
+    padding: 0 20px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    border-radius: 20px;
     background-color: rgb(52, 150, 219);
     color: white;
 }
 
 .chip i {
     float: left;
-    margin: 0 10px 0 -25px;
-    padding: 10px;
-    height: 50px;
-    width: 50px;
-    font-size: 30px;
+    margin: 0 10px 0 -20px;
+    padding: 9px;
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
     background-color: white;
     border-radius: 50%;
 }
