@@ -39,16 +39,15 @@ export class DetailedCvComponent {
         let doc = new jsPDF('1', 'pt', 'a4');
  
         let options = {
-            pagesplit: true
-         };
+            pagesplit: false
+        };
          
-         doc.addHTML(this.el.nativeElement, 0, 0).then(() => doc.save("test.pdf"));
-        /*html2canvas(element)
+        html2canvas(this.el.nativeElement)
         .then((canvas: any) => {
-            doc.addImage(canvas.toDataURL("image/jpeg"), "JPEG", 0, 0, doc.internal.pageSize.width, element.offsetHeight / 5 );
+            doc.addImage(canvas.toDataURL("image/jpeg"), "JPEG", 0, 0, doc.internal.pageSize.width, this.el.nativeElement.offsetHeight / 5 );
             doc.save(`Report-${Date.now()}.pdf`);
-        })
-        */
+        });
+        
         
     }
 }
