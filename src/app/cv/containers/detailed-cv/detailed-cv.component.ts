@@ -12,7 +12,6 @@ import * as html2canvas from 'html2canvas';
 
 import { CvService } from '../../cv.service';
 
-window.html2canvas = html2canvas;
 
 @Component( {
     selector: 'detailed-cv',

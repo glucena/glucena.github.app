@@ -96,8 +96,13 @@
                         <li  class="dividewhite4" *ngFor="let skill of category.skills; let i = index">
                             <div class="progressbar text-center">
                                 <h4 class="font-accident-two-bold uppercase">{{ skill.title }}</h4>
-                                <div [id]="'line' + ( i + 1 )" [progressBar]="'line'" [progressBarColor]="'#000000'" [progressBarTrailColor]="'#ccc'" [progressBarFrom]='{"color": "#3498db", "width": 4}'
-                                    [progressBarTo]='{"color": "#3497db", "width": 5}' [progressBarValue]="skill.level / 100">
+                                <div [id]="'line' + ( i + 1 )" [progressBar]="'line'" 
+                                    [progressBarColor]="'#000000'"
+                                    [progressBarTrailColor]="'#c8c8c8'" 
+                                    [progressBarTrailwidth]="4"
+                                    [progressBarFrom]='{"color": "#3498db", "width": 4}'
+                                    [progressBarTo]='{"color": "#3497db", "width": 5}'
+                                    [progressBarValue]="skill.level / 100">
                                 </div>
                             </div>
                         </li>
