@@ -30,7 +30,10 @@
         "../node_modules/tether/dist/js/tether.min.js",
         "../node_modules/bootstrap/dist/js/bootstrap.min.js",
         "../node_modules/progressbar.js/dist/progressbar.min.js",
-        "../node_modules/scrollreveal/dist/scrollreveal.js"
+        "../node_modules/scrollreveal/dist/scrollreveal.js",
+        "../node_modules/jspdf/dist/jspdf.min.js",
+        "../node_modules/html2canvas/dist/html2canvas.min.js",
+        "../node_modules/html2pdf.js/dist/html2pdf.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

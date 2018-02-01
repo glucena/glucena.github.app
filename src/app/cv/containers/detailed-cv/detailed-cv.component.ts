@@ -7,11 +7,9 @@
 
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
-import * as jsPDF from "jspdf";
-import * as html2canvas from 'html2canvas';
-
 import { CvService } from '../../cv.service';
 
+declare var html2pdf: any;
 
 @Component( {
     selector: 'detailed-cv',
@@ -35,18 +33,20 @@ export class DetailedCvComponent {
     }
 
     printPDF () {
-        let doc = new jsPDF('1', 'pt', 'a4');
+        //let doc = new jsPDF('1', 'pt', 'a4');
  
-        let options = {
-            pagesplit: false
-        };
+        //let options = {
+        //    pagesplit: false
+        //};
          
+        html2pdf(this.el.nativeElement);
+        /*
         html2canvas(this.el.nativeElement)
         .then((canvas: any) => {
             doc.addImage(canvas.toDataURL("image/jpeg"), "JPEG", 0, 0, doc.internal.pageSize.width, this.el.nativeElement.offsetHeight / 5 );
             doc.save(`Report-${Date.now()}.pdf`);
         });
-        
+        */
         
     }
 }
