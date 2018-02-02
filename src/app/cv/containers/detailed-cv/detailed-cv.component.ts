@@ -39,7 +39,14 @@ export class DetailedCvComponent {
         //    pagesplit: false
         //};
          
-        html2pdf(this.el.nativeElement);
+        html2pdf(this.el.nativeElement, {
+            margin:       2,
+            filename:     'myfile.pdf',
+            image:        { type: 'jpeg', quality: 0.98 },
+            enableLinks:  true,
+            html2canvas:  { dpi: 192, letterRendering: false },
+            jsPDF:        { unit: 'mm', format: 'a2', orientation: 'p' }
+          });
         /*
         html2canvas(this.el.nativeElement)
         .then((canvas: any) => {
