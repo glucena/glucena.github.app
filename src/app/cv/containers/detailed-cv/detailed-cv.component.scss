@@ -102,9 +102,6 @@ h1 {
     width: 100%;
 }
 
-#circle-skills .progressbar .progressbar-text {
-    color: black !important;
-}
 
 .progressbar {
     position: relative;
@@ -119,6 +116,10 @@ h1 {
         padding: 1px 10px 2px 10px;
         border-radius: 3px;
         line-height: 21px;
+    }
+
+    div.progressbar-text {
+        display: none;
     }
 }
 
