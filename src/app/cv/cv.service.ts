@@ -140,6 +140,22 @@ export class CvService {
               ]
             },
             {
+              title: 'WeLight',
+              description: "Development and maintenance of WeLight platform, a public lightning management system that allows the remote control and monitoring of street lights. The platform manager can configure remotely when the lights will switch on and off, establishing operation calendars. Currently Welight is one of the market leaders and it is deployed in more than 100 municipalities arround Spain",
+              resposabilities: [
+                'Evolutive & corrective development',
+                'Backend & frontend implementation',
+                'Embeded software development',
+                'Design and improvement the communication protocols',
+                'Technical support'
+              ],
+              tags: [
+                {label: 'Django', icon: 'devicon-django-plain'},
+                {label: 'mySQL', icon: 'devicon-mysql-plain'},
+                {label: 'python', icon: 'devicon-python-plain'}
+              ]
+            },
+            {
               title: 'CTBox',
               description: "Design and implementation of an embeded software for a surveilance device developed for Endesa Ingeniería. The software passed all the applicable audits accoding to the EN 50131 normative that defines European Standards for Intruder Alarm Systems. The device is currently on service in more than 200 electrical transformation facilities.",
               resposabilities: [
@@ -177,10 +193,36 @@ export class CvService {
           description: 'Software engineer in R&D department. Design and implementation of custom Web applications',
           image: 'building-monorail01',
           projects: [
-          ],
-          tags: [
-            'Django',
-            'Python'
+            {
+              title: 'WeSave',
+              description: "Technical leader and main developer of the product WeSave, a energy management platform that has the ability of monitoring electrical installation. The sotware offer to the user metrics that helps improving the energy efficiency of buildings and facilities.",
+              resposabilities: [
+                'Software maintenance',
+                'Implementation of new functionalities',
+                'Third parties integrations'
+              ],
+              tags: [
+                {label: 'Django', icon: 'devicon-django-plain'},
+                {label: 'mySQL', icon: 'devicon-mysql-plain'},
+                {label: 'python', icon: 'devicon-python-plain'}
+              ]
+            },
+            {
+              title: 'eGarbage 1.0',
+              description: "Technical leader and main developer of the eGarbage project. eGarbage was a R&D proyect that has as result the development of a managment sytem designed to gather fill information from urban waste conatiners and calculate efficent routes that allow the garbage treatment companies collect only the full containers saving time and CO2 emissions in the proccess",
+              resposabilities: [
+                'Architecture design',
+                'Platform implementation',
+                'Embeded software implementation',
+                'Design and implementation of wireless communication protocols'
+              ],
+              tags: [
+                {label: 'Django', icon: 'devicon-django-plain'},
+                {label: 'mySQL', icon: 'devicon-mysql-plain'},
+                {label: 'python', icon: 'devicon-python-plain'},
+                {label: 'C', icon: 'devicon-c-plain'}
+              ]
+            }
           ]
         }, {
           from: '06/2006',
