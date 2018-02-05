@@ -38,7 +38,7 @@
         </div>
         <div class="content">
             
-            <div class="" *ngFor="let item of cvData.employment; let i=index;">
+            <div class="" *ngFor="let item of cvData.employment; let i=index;" [ngClass]="{'m-top': i === 2}">
                 <div class="date">{{ item.from }} - {{ item.to }}</div>
                 <div class="position">{{ item.jobPosition }} at {{ item.where }}</div>
                 <div class="description">{{ item.description }}</div>
@@ -59,7 +59,8 @@
                         </li>
                     </ul>
                 </div>
-                <hr class="hr-short" *ngIf="i < cvData.employment.length - 1"/>
+                <div *ngIf="i === 1" class="html2pdf__page-break"></div>
+                <hr class="hr-short" *ngIf="i < cvData.employment.length - 1 && i !== 1"/>
             </div>
         
         </div>
