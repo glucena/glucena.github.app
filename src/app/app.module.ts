@@ -5,9 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgsRevealModule } from 'ng-scrollreveal';
-// import { AngularFireModule } from 'angularfire2';
-// import { AngularFireDatabaseModule } from 'angularfire2/database';
-// import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireModule } from 'angularfire2';
 
 // Modules
 import { NamePositionModule } from './cv/name-position.module';
@@ -24,7 +22,7 @@ import { AppRoutingModule } from './app.routing.module';
 import { AppComponent } from './app.component';
 
 // environment
-import { environment } from './../environments/environment';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -42,10 +40,8 @@ import { environment } from './../environments/environment';
     FooterModule,
     ContactsModule,
     DetailedCvModule,
-    AppRoutingModule
-//    AngularFireModule.initializeApp(environment.firebase),
-//    AngularFireDatabaseModule,
-//    AngularFireAuthModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],
   bootstrap: [AppComponent]
