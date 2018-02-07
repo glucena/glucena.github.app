@@ -29,7 +29,10 @@ export class DetailedCvComponent {
     constructor ( private cvService : CvService ) {};
 
     ngOnInit () {
-        this.cvData = this.cvService.getCvData();
+        //this.cvData = this.cvService.getCvData();
+        this.cvService.cvData.subscribe((data) => {
+            this.cvData = data
+        });
     }
 
     printPDF () {

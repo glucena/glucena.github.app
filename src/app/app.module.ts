@@ -23,6 +23,7 @@ import { AppComponent } from './app.component';
 
 // environment
 import { environment } from '../environments/environment';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { environment } from '../environments/environment';
     ContactsModule,
     DetailedCvModule,
     AppRoutingModule,
+    AngularFireDatabaseModule,
     AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [],

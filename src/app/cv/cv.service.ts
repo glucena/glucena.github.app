@@ -5,10 +5,17 @@
 * @Last Modified time: 2017-04-09 19:21:51
 */
 import { Injectable } from '@angular/core';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { Observable } from 'rxjs/Observable';
+
 
 @Injectable()
 export class CvService {
-  constructor(){};
+  cvData: Observable<any[]>;
+
+  constructor(db: AngularFireDatabase) {
+    this.cvData = db.list('en-US').valueChanges();
+  };
 
   getCvData(): Object {
     return {
