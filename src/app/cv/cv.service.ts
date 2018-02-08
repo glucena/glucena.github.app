@@ -14,7 +14,9 @@ export class CvService {
   cvData: Observable<any[]>;
 
   constructor(db: AngularFireDatabase) {
-    this.cvData = db.list('en-US').valueChanges();
+    this.cvData = db.object('en-US').snapshotChanges().map(res => {
+      return res.payload.val();
+    });
   };
 
   getCvData(): Object {
