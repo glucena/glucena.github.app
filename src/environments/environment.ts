@@ -4,5 +4,13 @@
 // The list of which env maps to which file can be found in `angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyCvMX3FNNfPBAsXPcgwiQxjm-3Bae8kv8k",
+    authDomain: "glucena-io.firebaseapp.com",
+    databaseURL: "https://glucena-io.firebaseio.com",
+    projectId: "glucena-io",
+    storageBucket: "glucena-io.appspot.com",
+    messagingSenderId: "271979341477"
+  }
 };
