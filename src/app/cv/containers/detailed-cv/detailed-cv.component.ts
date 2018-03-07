@@ -17,7 +17,8 @@ declare var html2pdf: any;
     styleUrls: [
         './detailed-cv.component.scss',
         '../../../../assets/css/devicon.css',
-        '../../../../assets/css/devicon-colors.css'
+        '../../../../assets/css/devicon-colors.css',
+        '../../../../assets/css/vendor/flaticons/flaticon.min.css'
     ]
 } )
 export class DetailedCvComponent {
@@ -25,7 +26,8 @@ export class DetailedCvComponent {
     @ViewChild('summary') el: ElementRef;
     
     cvData: any;
-    
+    downloading: boolean;
+
     constructor ( private cvService : CvService ) {};
 
     ngOnInit () {
@@ -35,12 +37,8 @@ export class DetailedCvComponent {
     }
 
     printPDF () {
-        //let doc = new jsPDF('1', 'pt', 'a4');
- 
-        //let options = {
-        //    pagesplit: false
-        //};
-         
+        this.downloading = true;
+        
         html2pdf(this.el.nativeElement, {
             margin:       2,
             filename:     'myfile.pdf',
@@ -48,14 +46,6 @@ export class DetailedCvComponent {
             enableLinks:  true,
             html2canvas:  { dpi: 192, letterRendering: false },
             jsPDF:        { unit: 'mm', format: 'a2', orientation: 'p' }
-          });
-        /*
-        html2canvas(this.el.nativeElement)
-        .then((canvas: any) => {
-            doc.addImage(canvas.toDataURL("image/jpeg"), "JPEG", 0, 0, doc.internal.pageSize.width, this.el.nativeElement.offsetHeight / 5 );
-            doc.save(`Report-${Date.now()}.pdf`);
         });
-        */
-        
     }
 }

@@ -112,5 +112,12 @@
             </ul>
         </div>
     </div>
-    <button (click)="printPDF()">PDF</button>
+
+    <hr *ngIf="!downloading"/>
+    
+    <div id="actions" class="field text-center" *ngIf="!downloading">
+        <button class="btn btn-lg btn-darker" (click)="printPDF()">
+            <i class="flaticon-download149" title="Download CV.pdf"></i> Download PDF
+        </button>
+    </div>
 </div>
