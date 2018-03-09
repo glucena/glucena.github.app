@@ -38,7 +38,9 @@ const appRoutes: Routes = [
         path: 'detailed-cv',
         component: DetailedCvComponent
     },
-    { path: '**', redirectTo: 'summary' }
+    {   path: '**',
+        redirectTo: 'summary'
+    }
 ];
 
 @NgModule({
